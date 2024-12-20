@@ -1,10 +1,16 @@
-#include "chessPiece.h"
+#include "ChessPiece.h"
 
-void chessPeice::checkForSelfChecks()
+ChessPiece::ChessPiece(int position, char color)
+{
+	this->_color = color;
+	this->_position = position;
+}
+
+void ChessPiece::checkForSelfChecks()
 {
 	//complete
 }
-void chessPeice::checkForOpponentChecks()
+void ChessPiece::checkForOpponentChecks()
 {
 	//complete
 }

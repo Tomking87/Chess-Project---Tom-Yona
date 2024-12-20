@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="chessPiece.h">
+    <ClInclude Include="ChessPiece.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Square.h">
@@ -32,7 +32,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="chessPiece.cpp">
+    <ClCompile Include="ChessPiece.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Manager.cpp">

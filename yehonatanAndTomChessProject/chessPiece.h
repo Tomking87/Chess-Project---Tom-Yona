@@ -1,11 +1,13 @@
 #pragma once
 #include <string>
-class chessPeice
+class ChessPiece
 {
 protected:
-	std::string position;
-	int color;
+	int _position;
+	char _color;
 
+	ChessPiece(int position, char color);
+	virtual ~ChessPiece();
 	virtual int move() = 0;
 	virtual void checkForSelfChecks();
 	virtual void checkForOpponentChecks();

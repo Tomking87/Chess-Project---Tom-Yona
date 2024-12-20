@@ -20,14 +20,14 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Board.h" />
-    <ClInclude Include="chessPiece.h" />
+    <ClInclude Include="ChessPiece.h" />
     <ClInclude Include="Manager.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="Square.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Board.cpp" />
-    <ClCompile Include="chessPiece.cpp" />
+    <ClCompile Include="ChessPiece.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Manager.cpp" />
     <ClCompile Include="Player.cpp" />
