@@ -19,11 +19,10 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="sagit.h" />
+    <ClInclude Include="chessPiece.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="rook.cpp" />
-    <ClCompile Include="sagit.cpp" />
+    <ClCompile Include="chessPiece.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
