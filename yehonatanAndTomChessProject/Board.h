@@ -1,5 +1,6 @@
 #pragma once
 #include "Square.h"
+#include <vector>
 #include <string>
 #define rowLength 8
 #define colLength 8
@@ -7,7 +8,7 @@
 class Board
 {
 private:
-	Square _BoardGrid[rowLength][colLength];
+	std::vector<std::vector<Square>> _BoardGrid;
 
 public:
 	Board();

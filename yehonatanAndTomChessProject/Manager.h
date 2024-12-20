@@ -7,7 +7,7 @@ class Manager
 {
 private:
 	char _currentTurn; // W for White and B for Black
-	Board _board;
+	Board _board();
 	Player _whitePlayer;
 	Player _blackPlayer;
 

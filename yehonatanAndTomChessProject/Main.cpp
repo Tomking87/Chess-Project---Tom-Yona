@@ -8,8 +8,12 @@
 
 int main()
 {
-	Board ChessBoard();
-	Manager GameManager();
+	Board ChessBoard;
+	Player WhitePlayer('W', false);
+	Player BlackPlayer('B', false);
+	char firstPlayer = 'W';
+	Manager GameManager('W', ChessBoard, WhitePlayer, BlackPlayer);
+
 
 
 	return 0;

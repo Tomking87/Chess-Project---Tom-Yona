@@ -1,0 +1,10 @@
+﻿  Board.cpp
+  ChessPiece.cpp
+  Main.cpp
+  Manager.cpp
+  Player.cpp
+  Square.cpp
+D:\ekronot - magshimim\Chess-Project---Tom-Yona\Chess-Project---Tom-Yona\yehonatanAndTomChessProject\Manager.cpp(3,114): error C2436: '_board': member function or nested class in constructor initializer list
+  Generating Code...
+D:\ekronot - magshimim\Chess-Project---Tom-Yona\Chess-Project---Tom-Yona\yehonatanAndTomChessProject\Board.cpp(14,1): error C4716: 'Board::getSquare': must return a value
+D:\ekronot - magshimim\Chess-Project---Tom-Yona\Chess-Project---Tom-Yona\yehonatanAndTomChessProject\Board.cpp(23,1): error C4716: 'Board::convertPositionToIntCords': must return a value
