@@ -1,9 +1,17 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Cyber_User\\Documents\\Magshimim\\Ekronot\\Ex07-08-ChessProject\\Chess-Project---Tom-Yona\\yehonatanAndTomChessProject\\",
+  "WorkspaceRootPath": "D:\\ekronot - magshimim\\Chess-Project---Tom-Yona\\yehonatanAndTomChessProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{70F2DA24-A75D-41C9-B4C4-04E16A02A8B7}|yehonatanAndTomChessProject.vcxproj|C:\\Users\\Cyber_User\\Documents\\Magshimim\\Ekronot\\Ex07-08-ChessProject\\Chess-Project---Tom-Yona\\yehonatanAndTomChessProject\\sagit.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{70F2DA24-A75D-41C9-B4C4-04E16A02A8B7}|yehonatanAndTomChessProject.vcxproj|D:\\ekronot - magshimim\\Chess-Project---Tom-Yona\\yehonatanAndTomChessProject\\rook.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{70F2DA24-A75D-41C9-B4C4-04E16A02A8B7}|yehonatanAndTomChessProject.vcxproj|solutionrelative:rook.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70F2DA24-A75D-41C9-B4C4-04E16A02A8B7}|yehonatanAndTomChessProject.vcxproj|D:\\ekronot - magshimim\\Chess-Project---Tom-Yona\\yehonatanAndTomChessProject\\sagit.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{70F2DA24-A75D-41C9-B4C4-04E16A02A8B7}|yehonatanAndTomChessProject.vcxproj|solutionrelative:sagit.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70F2DA24-A75D-41C9-B4C4-04E16A02A8B7}|yehonatanAndTomChessProject.vcxproj|D:\\ekronot - magshimim\\Chess-Project---Tom-Yona\\yehonatanAndTomChessProject\\sagit.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{70F2DA24-A75D-41C9-B4C4-04E16A02A8B7}|yehonatanAndTomChessProject.vcxproj|solutionrelative:sagit.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -19,33 +27,41 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "sagit.h",
-              "DocumentMoniker": "C:\\Users\\Cyber_User\\Documents\\Magshimim\\Ekronot\\Ex07-08-ChessProject\\Chess-Project---Tom-Yona\\yehonatanAndTomChessProject\\sagit.h",
-              "RelativeDocumentMoniker": "sagit.h",
-              "ToolTip": "C:\\Users\\Cyber_User\\Documents\\Magshimim\\Ekronot\\Ex07-08-ChessProject\\Chess-Project---Tom-Yona\\yehonatanAndTomChessProject\\sagit.h",
-              "RelativeToolTip": "sagit.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-20T14:07:24.165Z",
+              "Title": "rook.cpp",
+              "DocumentMoniker": "D:\\ekronot - magshimim\\Chess-Project---Tom-Yona\\yehonatanAndTomChessProject\\rook.cpp",
+              "RelativeDocumentMoniker": "rook.cpp",
+              "ToolTip": "D:\\ekronot - magshimim\\Chess-Project---Tom-Yona\\yehonatanAndTomChessProject\\rook.cpp",
+              "RelativeToolTip": "rook.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-20T14:15:48.427Z",
               "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": -1,
-          "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "sagit.h",
+              "DocumentMoniker": "D:\\ekronot - magshimim\\Chess-Project---Tom-Yona\\yehonatanAndTomChessProject\\sagit.h",
+              "RelativeDocumentMoniker": "sagit.h",
+              "ToolTip": "D:\\ekronot - magshimim\\Chess-Project---Tom-Yona\\yehonatanAndTomChessProject\\sagit.h",
+              "RelativeToolTip": "sagit.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-20T14:14:24.37Z",
+              "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{68487888-204a-11d3-87eb-00c04f7971a5}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "sagit.cpp",
+              "DocumentMoniker": "D:\\ekronot - magshimim\\Chess-Project---Tom-Yona\\yehonatanAndTomChessProject\\sagit.cpp",
+              "RelativeDocumentMoniker": "sagit.cpp",
+              "ToolTip": "D:\\ekronot - magshimim\\Chess-Project---Tom-Yona\\yehonatanAndTomChessProject\\sagit.cpp",
+              "RelativeToolTip": "sagit.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-20T14:14:16.48Z",
+              "EditorCaption": ""
             }
           ]
         }
