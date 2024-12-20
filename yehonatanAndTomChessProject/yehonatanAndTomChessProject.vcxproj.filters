@@ -15,7 +15,12 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="rook.cpp">
+    <ClInclude Include="sagit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sagit.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
