@@ -2,7 +2,7 @@
 #include "ChessPiece.h"
 
 
-Pawn::Pawn(std::string position, char color, bool hasMoved) : ChessPiece(position, color)
+Pawn::Pawn(std::string position, char color, bool hasMoved, char type) : ChessPiece(position, color, type)
 {
 	this->_hasMoved = hasMoved;
 }

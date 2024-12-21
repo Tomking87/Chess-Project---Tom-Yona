@@ -1,7 +1,7 @@
 #include "Knight.h"
 #include "ChessPiece.h"
 
-Knight::Knight(std::string position, char color) : ChessPiece(position, color)
+Knight::Knight(std::string position, char color, char type) : ChessPiece(position, color, type)
 {
     // already Implemented in chessPiece
 }

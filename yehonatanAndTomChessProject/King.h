@@ -4,7 +4,7 @@
 class King : public ChessPiece
 {
 public:
-    King(std::string position, char color);
+    King(std::string position, char color, char type);
     ~King();
     int move() override;
 };

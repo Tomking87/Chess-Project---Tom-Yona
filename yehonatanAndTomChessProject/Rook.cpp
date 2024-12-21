@@ -1,7 +1,7 @@
 #include "Rook.h"
 #include "ChessPiece.h"
 
-Rook::Rook(std::string position, char color) : ChessPiece(position, color)
+Rook::Rook(std::string position, char color, char type) : ChessPiece(position, color, type)
 {
 	// already Implemented in chessPiece
 }
@@ -11,15 +11,15 @@ Rook::~Rook()
 }
 
 
-int move()
-{
-
-}
-void checkForSelfChecks()
-{
-
-}
-void checkForOpponentChecks()
-{
-
-}
+//int move()
+//{
+//
+//}
+//void checkForSelfChecks()
+//{
+//
+//}
+//void checkForOpponentChecks()
+//{
+//
+//}

@@ -1,7 +1,7 @@
 #include "King.h"
 #include "ChessPiece.h"
 
-King::King(std::string position, char color) : ChessPiece(position, color)
+King::King(std::string position, char color, char type) : ChessPiece(position, color, type)
 {
     // already Implemented in chessPiece
 }

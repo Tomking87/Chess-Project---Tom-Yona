@@ -6,14 +6,17 @@ protected:
 	int _Xposition;
 	int _Yposition;
 	char _color;
+	char _type;
+	
 
-	ChessPiece(std::string position, char color); // take the position and brake it down to the x and y positions
+	ChessPiece(std::string position, char color, char type); // take the position and brake it down to the x and y positions
 	virtual ~ChessPiece();
 	virtual int move() = 0;
-	virtual void checkForSelfChecks();
-	virtual void checkForOpponentChecks();
 
 public:
 	char getChessPieceColor();
+	virtual void checkForSelfChecks();
+	virtual void checkForOpponentChecks();
+	char getChessPieceType();
 
 };
