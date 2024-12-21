@@ -3,8 +3,8 @@
 class ChessPiece
 {
 protected:
-	int Xposition;
-	int Yposition;
+	int _Xposition;
+	int _Yposition;
 	char _color;
 
 	ChessPiece(std::string position, char color); // take the position and brake it down to the x and y positions

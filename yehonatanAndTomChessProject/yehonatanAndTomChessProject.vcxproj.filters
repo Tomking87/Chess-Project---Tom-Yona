@@ -90,7 +90,7 @@
       <Filter>Source Files\chess pieces</Filter>
     </ClCompile>
     <ClCompile Include="ChessPiece.cpp">
-      <Filter>Source Files\chess pieces</Filter>
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

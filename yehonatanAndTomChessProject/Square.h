@@ -13,4 +13,7 @@ public:
 	~Square();
 	bool getSquareStatus() const; // output is Empty
 	void setSquareStatus(bool squareStatus); // input to isEmpty
+	ChessPiece* getChessPieceAtSquare() const;
+	std::string getSquarePosition() const;
+	void setPieceInSquare(ChessPiece* piece);
 };

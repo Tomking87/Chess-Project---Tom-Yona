@@ -4,8 +4,10 @@
 class Pawn : public ChessPiece
 {
 private:
-    bool hasMoved;
+    bool _hasMoved;
 public:
+    Pawn(std::string position, char color, bool hasMoved);
+    ~Pawn();
     bool getMovedStatus();
     int move() override;
     int eat();

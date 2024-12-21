@@ -19,9 +19,9 @@ private:
 public:
 	Board();
 	~Board();
-	Square getSquare() const; // get a squere at the board
-	void setBoard(Square square, std::string position); // sets a specific Square at the board
+	Square getSquare(int Xposition, int Yposition) const; // get a squere at the board
+	void setSquareInBoard(Square mySquare, std::string position); // sets a specific Square at the board
 	// take the algebretic notation and convert it into x and y cords in format: int xy
-	int convertPositionToIntCords(std::string position);
+	std::string convertPositionToIntCords(std::string position);
 
 };
