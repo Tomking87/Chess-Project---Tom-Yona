@@ -1,5 +1,11 @@
 #pragma once
 #include "Square.h"
+#include "Rook.h"
+#include "Knight.h"
+#include "Bishop.h"
+#include "King.h"
+#include "Queen.h"
+#include "Pawn.h"
 #include <vector>
 #include <string>
 #define rowLength 8

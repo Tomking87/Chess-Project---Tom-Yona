@@ -13,6 +13,7 @@ int main()
 	Player BlackPlayer('B', false);
 	char firstPlayer = 'W';
 	Manager GameManager('W', ChessBoard, WhitePlayer, BlackPlayer);
+	
 
 
 
