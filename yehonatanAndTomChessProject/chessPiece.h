@@ -12,4 +12,8 @@ protected:
 	virtual int move() = 0;
 	virtual void checkForSelfChecks();
 	virtual void checkForOpponentChecks();
+
+public:
+	char getChessPieceColor();
+
 };

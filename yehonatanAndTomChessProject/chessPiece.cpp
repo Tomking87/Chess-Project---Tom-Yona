@@ -8,3 +8,8 @@ ChessPiece::ChessPiece(std::string position, char color)
     this->_Yposition = position[1] - '0';
     this->_color = color;
 }
+
+char ChessPiece::getChessPieceColor()
+{
+    return this->_color;
+}

@@ -87,5 +87,7 @@ std::string Board::convertPositionToIntCords(std::string position)
 	char1_7 = char1_7 - '1' + '0';
 	// Combine the results into a string
     cords += char1_7; // Add the row
-    cords += chara_h; // Add the column
+    cords += chara_h; // Add the col
+
+	return cords;
 }

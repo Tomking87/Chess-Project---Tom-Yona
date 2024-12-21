@@ -7,7 +7,7 @@ class Manager
 {
 private:
 	char _currentTurn; // W for White and B for Black
-	Board _board();
+	Board _board;
 	Player _whitePlayer;
 	Player _blackPlayer;
 
@@ -17,4 +17,5 @@ public:
 	std::string convertBoardToString(Board board);
 	char getCurrentTurn() const;
 	void setCurrentTurn(char currentTurn);
+	void printBoard(std::string boardString);
 };
