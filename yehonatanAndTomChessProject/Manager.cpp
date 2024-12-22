@@ -21,13 +21,13 @@ std::string Manager::convertBoardToString(Board board)
 	{
 		for (int j = 0;j < 8;j++)
 		{
-			if (board.getSquare(i, j).getSquareStatus() == true)
+			if (board.getSquare(j, i).getSquareStatus() == true)
 			{
 				boardString.push_back('#');
 			}
 			else
 			{
-				ChessPiece* myChessPiece = board.getSquare(i, j).getChessPieceAtSquare();
+				ChessPiece* myChessPiece = board.getSquare(j, i).getChessPieceAtSquare();
 				ChessPiece& myChessPieceObj = *myChessPiece;
 				if (myChessPieceObj.getChessPieceColor() == 'W')
 				{
@@ -93,13 +93,13 @@ std::string Manager::convertBoardToString(Board board)
 
 void Manager::printBoard(std::string boardString)
 {
-	int count = 0;
+	int count = 63;
 	for(int i = 0; i < 8; i++)
 	{
 		for (int j = 0; j < 8; j++)
 		{
 			std::cout << " " << boardString[count];
-			count++;
+			count--;
 		}
 		std::cout << std::endl;
 	}

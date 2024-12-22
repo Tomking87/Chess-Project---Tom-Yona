@@ -10,6 +10,7 @@ using namespace std;
 
 int main()
 {
+	string stringInput = "";
 	Board ChessBoard;
 	string chessBoardString = "";
 	Player WhitePlayer('W', false);
@@ -18,8 +19,11 @@ int main()
 	Manager GameManager('W', ChessBoard, WhitePlayer, BlackPlayer);
 	
 	chessBoardString = GameManager.convertBoardToString(ChessBoard);
-	//cout << chessBoardString << endl;
+	cout << chessBoardString << endl;
 	GameManager.printBoard(chessBoardString);
+
+	cin >> stringInput;
+
 
 	return 0;
 }
