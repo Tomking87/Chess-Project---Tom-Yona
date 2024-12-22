@@ -1,4 +1,5 @@
 #pragma once
+#include <string>
 
 class Player
 {
@@ -11,4 +12,5 @@ public:
 	~Player();
 	virtual void checkForSelfChecks();	// will check for all the checks in board
 	virtual void checkForOpponentChecks(); 
+	int checkMove(std::string move);
 };

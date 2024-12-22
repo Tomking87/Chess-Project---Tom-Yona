@@ -1,5 +1,6 @@
 #include "Rook.h"
 #include "ChessPiece.h"
+using namespace std;
 
 Rook::Rook(std::string position, char color, char type) : ChessPiece(position, color, type)
 {
@@ -10,8 +11,9 @@ Rook::~Rook()
 	// already Implemented in chessPiece
 }
 
-int Rook::move()
+string* Rook::move()
 {
-	//Need to implement
-	return 0;
+    string* myStr = new string[1];
+    // Need to implement
+    return myStr;
 }

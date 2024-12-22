@@ -15,48 +15,24 @@
       "RelativeMoniker": "D:0:0:{70F2DA24-A75D-41C9-B4C4-04E16A02A8B7}|yehonatanAndTomChessProject.vcxproj|solutionrelative:Board.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{70F2DA24-A75D-41C9-B4C4-04E16A02A8B7}|yehonatanAndTomChessProject.vcxproj|C:\\Users\\Cyber_User\\Documents\\Magshimim\\Ekronot\\Ex07-08-ChessProject\\Chess-Project---Tom-Yona\\yehonatanAndTomChessProject\\Square.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{70F2DA24-A75D-41C9-B4C4-04E16A02A8B7}|yehonatanAndTomChessProject.vcxproj|solutionrelative:Square.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{70F2DA24-A75D-41C9-B4C4-04E16A02A8B7}|yehonatanAndTomChessProject.vcxproj|C:\\Users\\Cyber_User\\Documents\\Magshimim\\Ekronot\\Ex07-08-ChessProject\\Chess-Project---Tom-Yona\\yehonatanAndTomChessProject\\ChessPiece.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{70F2DA24-A75D-41C9-B4C4-04E16A02A8B7}|yehonatanAndTomChessProject.vcxproj|solutionrelative:ChessPiece.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{70F2DA24-A75D-41C9-B4C4-04E16A02A8B7}|yehonatanAndTomChessProject.vcxproj|C:\\Users\\Cyber_User\\Documents\\Magshimim\\Ekronot\\Ex07-08-ChessProject\\Chess-Project---Tom-Yona\\yehonatanAndTomChessProject\\Square.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{70F2DA24-A75D-41C9-B4C4-04E16A02A8B7}|yehonatanAndTomChessProject.vcxproj|solutionrelative:Square.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70F2DA24-A75D-41C9-B4C4-04E16A02A8B7}|yehonatanAndTomChessProject.vcxproj|C:\\Users\\Cyber_User\\Documents\\Magshimim\\Ekronot\\Ex07-08-ChessProject\\Chess-Project---Tom-Yona\\yehonatanAndTomChessProject\\Bishop.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{70F2DA24-A75D-41C9-B4C4-04E16A02A8B7}|yehonatanAndTomChessProject.vcxproj|solutionrelative:Bishop.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{70F2DA24-A75D-41C9-B4C4-04E16A02A8B7}|yehonatanAndTomChessProject.vcxproj|C:\\Users\\Cyber_User\\Documents\\Magshimim\\Ekronot\\Ex07-08-ChessProject\\Chess-Project---Tom-Yona\\yehonatanAndTomChessProject\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{70F2DA24-A75D-41C9-B4C4-04E16A02A8B7}|yehonatanAndTomChessProject.vcxproj|solutionrelative:Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{70F2DA24-A75D-41C9-B4C4-04E16A02A8B7}|yehonatanAndTomChessProject.vcxproj|C:\\Users\\Cyber_User\\Documents\\Magshimim\\Ekronot\\Ex07-08-ChessProject\\Chess-Project---Tom-Yona\\yehonatanAndTomChessProject\\Rook.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{70F2DA24-A75D-41C9-B4C4-04E16A02A8B7}|yehonatanAndTomChessProject.vcxproj|solutionrelative:Rook.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{70F2DA24-A75D-41C9-B4C4-04E16A02A8B7}|yehonatanAndTomChessProject.vcxproj|C:\\Users\\Cyber_User\\Documents\\Magshimim\\Ekronot\\Ex07-08-ChessProject\\Chess-Project---Tom-Yona\\yehonatanAndTomChessProject\\Pawn.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{70F2DA24-A75D-41C9-B4C4-04E16A02A8B7}|yehonatanAndTomChessProject.vcxproj|solutionrelative:Pawn.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{70F2DA24-A75D-41C9-B4C4-04E16A02A8B7}|yehonatanAndTomChessProject.vcxproj|C:\\Users\\Cyber_User\\Documents\\Magshimim\\Ekronot\\Ex07-08-ChessProject\\Chess-Project---Tom-Yona\\yehonatanAndTomChessProject\\Queen.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{70F2DA24-A75D-41C9-B4C4-04E16A02A8B7}|yehonatanAndTomChessProject.vcxproj|solutionrelative:Queen.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{70F2DA24-A75D-41C9-B4C4-04E16A02A8B7}|yehonatanAndTomChessProject.vcxproj|C:\\Users\\Cyber_User\\Documents\\Magshimim\\Ekronot\\Ex07-08-ChessProject\\Chess-Project---Tom-Yona\\yehonatanAndTomChessProject\\Board.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{70F2DA24-A75D-41C9-B4C4-04E16A02A8B7}|yehonatanAndTomChessProject.vcxproj|solutionrelative:Board.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70F2DA24-A75D-41C9-B4C4-04E16A02A8B7}|yehonatanAndTomChessProject.vcxproj|C:\\Users\\Cyber_User\\Documents\\Magshimim\\Ekronot\\Ex07-08-ChessProject\\Chess-Project---Tom-Yona\\yehonatanAndTomChessProject\\ChessPiece.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{70F2DA24-A75D-41C9-B4C4-04E16A02A8B7}|yehonatanAndTomChessProject.vcxproj|solutionrelative:ChessPiece.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70F2DA24-A75D-41C9-B4C4-04E16A02A8B7}|yehonatanAndTomChessProject.vcxproj|C:\\Users\\Cyber_User\\Documents\\Magshimim\\Ekronot\\Ex07-08-ChessProject\\Chess-Project---Tom-Yona\\yehonatanAndTomChessProject\\ChessPiece.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{70F2DA24-A75D-41C9-B4C4-04E16A02A8B7}|yehonatanAndTomChessProject.vcxproj|solutionrelative:ChessPiece.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70F2DA24-A75D-41C9-B4C4-04E16A02A8B7}|yehonatanAndTomChessProject.vcxproj|C:\\Users\\Cyber_User\\Documents\\Magshimim\\Ekronot\\Ex07-08-ChessProject\\Chess-Project---Tom-Yona\\yehonatanAndTomChessProject\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{70F2DA24-A75D-41C9-B4C4-04E16A02A8B7}|yehonatanAndTomChessProject.vcxproj|solutionrelative:Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70F2DA24-A75D-41C9-B4C4-04E16A02A8B7}|yehonatanAndTomChessProject.vcxproj|C:\\Users\\Cyber_User\\Documents\\Magshimim\\Ekronot\\Ex07-08-ChessProject\\Chess-Project---Tom-Yona\\yehonatanAndTomChessProject\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{70F2DA24-A75D-41C9-B4C4-04E16A02A8B7}|yehonatanAndTomChessProject.vcxproj|solutionrelative:Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{70F2DA24-A75D-41C9-B4C4-04E16A02A8B7}|yehonatanAndTomChessProject.vcxproj|C:\\Users\\Cyber_User\\Documents\\Magshimim\\Ekronot\\Ex07-08-ChessProject\\Chess-Project---Tom-Yona\\yehonatanAndTomChessProject\\Pawn.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{70F2DA24-A75D-41C9-B4C4-04E16A02A8B7}|yehonatanAndTomChessProject.vcxproj|solutionrelative:Pawn.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{70F2DA24-A75D-41C9-B4C4-04E16A02A8B7}|yehonatanAndTomChessProject.vcxproj|C:\\Users\\Cyber_User\\Documents\\Magshimim\\Ekronot\\Ex07-08-ChessProject\\Chess-Project---Tom-Yona\\yehonatanAndTomChessProject\\Knight.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -67,12 +43,8 @@
       "RelativeMoniker": "D:0:0:{70F2DA24-A75D-41C9-B4C4-04E16A02A8B7}|yehonatanAndTomChessProject.vcxproj|solutionrelative:King.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{70F2DA24-A75D-41C9-B4C4-04E16A02A8B7}|yehonatanAndTomChessProject.vcxproj|C:\\Users\\Cyber_User\\Documents\\Magshimim\\Ekronot\\Ex07-08-ChessProject\\Chess-Project---Tom-Yona\\yehonatanAndTomChessProject\\King.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{70F2DA24-A75D-41C9-B4C4-04E16A02A8B7}|yehonatanAndTomChessProject.vcxproj|solutionrelative:King.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70F2DA24-A75D-41C9-B4C4-04E16A02A8B7}|yehonatanAndTomChessProject.vcxproj|C:\\Users\\Cyber_User\\Documents\\Magshimim\\Ekronot\\Ex07-08-ChessProject\\Chess-Project---Tom-Yona\\yehonatanAndTomChessProject\\Bishop.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{70F2DA24-A75D-41C9-B4C4-04E16A02A8B7}|yehonatanAndTomChessProject.vcxproj|solutionrelative:Bishop.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{70F2DA24-A75D-41C9-B4C4-04E16A02A8B7}|yehonatanAndTomChessProject.vcxproj|C:\\Users\\Cyber_User\\Documents\\Magshimim\\Ekronot\\Ex07-08-ChessProject\\Chess-Project---Tom-Yona\\yehonatanAndTomChessProject\\Bishop.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{70F2DA24-A75D-41C9-B4C4-04E16A02A8B7}|yehonatanAndTomChessProject.vcxproj|solutionrelative:Bishop.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{70F2DA24-A75D-41C9-B4C4-04E16A02A8B7}|yehonatanAndTomChessProject.vcxproj|C:\\Users\\Cyber_User\\Documents\\Magshimim\\Ekronot\\Ex07-08-ChessProject\\Chess-Project---Tom-Yona\\yehonatanAndTomChessProject\\Rook.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -89,6 +61,34 @@
     {
       "AbsoluteMoniker": "D:0:0:{70F2DA24-A75D-41C9-B4C4-04E16A02A8B7}|yehonatanAndTomChessProject.vcxproj|C:\\Users\\Cyber_User\\Documents\\Magshimim\\Ekronot\\Ex07-08-ChessProject\\Chess-Project---Tom-Yona\\yehonatanAndTomChessProject\\Knight.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{70F2DA24-A75D-41C9-B4C4-04E16A02A8B7}|yehonatanAndTomChessProject.vcxproj|solutionrelative:Knight.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70F2DA24-A75D-41C9-B4C4-04E16A02A8B7}|yehonatanAndTomChessProject.vcxproj|C:\\Users\\Cyber_User\\Documents\\Magshimim\\Ekronot\\Ex07-08-ChessProject\\Chess-Project---Tom-Yona\\yehonatanAndTomChessProject\\King.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{70F2DA24-A75D-41C9-B4C4-04E16A02A8B7}|yehonatanAndTomChessProject.vcxproj|solutionrelative:King.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70F2DA24-A75D-41C9-B4C4-04E16A02A8B7}|yehonatanAndTomChessProject.vcxproj|C:\\Users\\Cyber_User\\Documents\\Magshimim\\Ekronot\\Ex07-08-ChessProject\\Chess-Project---Tom-Yona\\yehonatanAndTomChessProject\\Bishop.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{70F2DA24-A75D-41C9-B4C4-04E16A02A8B7}|yehonatanAndTomChessProject.vcxproj|solutionrelative:Bishop.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70F2DA24-A75D-41C9-B4C4-04E16A02A8B7}|yehonatanAndTomChessProject.vcxproj|C:\\Users\\Cyber_User\\Documents\\Magshimim\\Ekronot\\Ex07-08-ChessProject\\Chess-Project---Tom-Yona\\yehonatanAndTomChessProject\\ChessPiece.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{70F2DA24-A75D-41C9-B4C4-04E16A02A8B7}|yehonatanAndTomChessProject.vcxproj|solutionrelative:ChessPiece.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70F2DA24-A75D-41C9-B4C4-04E16A02A8B7}|yehonatanAndTomChessProject.vcxproj|C:\\Users\\Cyber_User\\Documents\\Magshimim\\Ekronot\\Ex07-08-ChessProject\\Chess-Project---Tom-Yona\\yehonatanAndTomChessProject\\Square.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{70F2DA24-A75D-41C9-B4C4-04E16A02A8B7}|yehonatanAndTomChessProject.vcxproj|solutionrelative:Square.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70F2DA24-A75D-41C9-B4C4-04E16A02A8B7}|yehonatanAndTomChessProject.vcxproj|C:\\Users\\Cyber_User\\Documents\\Magshimim\\Ekronot\\Ex07-08-ChessProject\\Chess-Project---Tom-Yona\\yehonatanAndTomChessProject\\Square.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{70F2DA24-A75D-41C9-B4C4-04E16A02A8B7}|yehonatanAndTomChessProject.vcxproj|solutionrelative:Square.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70F2DA24-A75D-41C9-B4C4-04E16A02A8B7}|yehonatanAndTomChessProject.vcxproj|C:\\Users\\Cyber_User\\Documents\\Magshimim\\Ekronot\\Ex07-08-ChessProject\\Chess-Project---Tom-Yona\\yehonatanAndTomChessProject\\Board.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{70F2DA24-A75D-41C9-B4C4-04E16A02A8B7}|yehonatanAndTomChessProject.vcxproj|solutionrelative:Board.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70F2DA24-A75D-41C9-B4C4-04E16A02A8B7}|yehonatanAndTomChessProject.vcxproj|C:\\Users\\Cyber_User\\Documents\\Magshimim\\Ekronot\\Ex07-08-ChessProject\\Chess-Project---Tom-Yona\\yehonatanAndTomChessProject\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{70F2DA24-A75D-41C9-B4C4-04E16A02A8B7}|yehonatanAndTomChessProject.vcxproj|solutionrelative:Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{70F2DA24-A75D-41C9-B4C4-04E16A02A8B7}|yehonatanAndTomChessProject.vcxproj|C:\\Users\\Cyber_User\\Documents\\Magshimim\\Ekronot\\Ex07-08-ChessProject\\Chess-Project---Tom-Yona\\yehonatanAndTomChessProject\\Manager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -121,7 +121,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 21,
               "Title": "Player.cpp",
               "DocumentMoniker": "C:\\Users\\Cyber_User\\Documents\\Magshimim\\Ekronot\\Ex07-08-ChessProject\\Chess-Project---Tom-Yona\\yehonatanAndTomChessProject\\Player.cpp",
               "RelativeDocumentMoniker": "Player.cpp",
@@ -133,63 +133,68 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 4,
               "Title": "Player.h",
               "DocumentMoniker": "C:\\Users\\Cyber_User\\Documents\\Magshimim\\Ekronot\\Ex07-08-ChessProject\\Chess-Project---Tom-Yona\\yehonatanAndTomChessProject\\Player.h",
               "RelativeDocumentMoniker": "Player.h",
               "ToolTip": "C:\\Users\\Cyber_User\\Documents\\Magshimim\\Ekronot\\Ex07-08-ChessProject\\Chess-Project---Tom-Yona\\yehonatanAndTomChessProject\\Player.h",
               "RelativeToolTip": "Player.h",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAQwAwAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-22T06:27:44.687Z"
+              "WhenOpened": "2024-12-22T06:27:44.687Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 6,
               "Title": "Queen.cpp",
               "DocumentMoniker": "C:\\Users\\Cyber_User\\Documents\\Magshimim\\Ekronot\\Ex07-08-ChessProject\\Chess-Project---Tom-Yona\\yehonatanAndTomChessProject\\Queen.cpp",
               "RelativeDocumentMoniker": "Queen.cpp",
               "ToolTip": "C:\\Users\\Cyber_User\\Documents\\Magshimim\\Ekronot\\Ex07-08-ChessProject\\Chess-Project---Tom-Yona\\yehonatanAndTomChessProject\\Queen.cpp",
               "RelativeToolTip": "Queen.cpp",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAAAAwAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-12-21T20:26:12.426Z"
+              "WhenOpened": "2024-12-21T20:26:12.426Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 8,
               "Title": "Knight.cpp",
               "DocumentMoniker": "C:\\Users\\Cyber_User\\Documents\\Magshimim\\Ekronot\\Ex07-08-ChessProject\\Chess-Project---Tom-Yona\\yehonatanAndTomChessProject\\Knight.cpp",
               "RelativeDocumentMoniker": "Knight.cpp",
               "ToolTip": "C:\\Users\\Cyber_User\\Documents\\Magshimim\\Ekronot\\Ex07-08-ChessProject\\Chess-Project---Tom-Yona\\yehonatanAndTomChessProject\\Knight.cpp",
               "RelativeToolTip": "Knight.cpp",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAQwA8AAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-12-21T20:25:30.52Z"
+              "WhenOpened": "2024-12-21T20:25:30.52Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 9,
               "Title": "King.cpp",
               "DocumentMoniker": "C:\\Users\\Cyber_User\\Documents\\Magshimim\\Ekronot\\Ex07-08-ChessProject\\Chess-Project---Tom-Yona\\yehonatanAndTomChessProject\\King.cpp",
               "RelativeDocumentMoniker": "King.cpp",
               "ToolTip": "C:\\Users\\Cyber_User\\Documents\\Magshimim\\Ekronot\\Ex07-08-ChessProject\\Chess-Project---Tom-Yona\\yehonatanAndTomChessProject\\King.cpp",
               "RelativeToolTip": "King.cpp",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAQwAwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-12-21T20:25:22.982Z"
+              "WhenOpened": "2024-12-21T20:25:22.982Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
               "Title": "Bishop.cpp",
               "DocumentMoniker": "C:\\Users\\Cyber_User\\Documents\\Magshimim\\Ekronot\\Ex07-08-ChessProject\\Chess-Project---Tom-Yona\\yehonatanAndTomChessProject\\Bishop.cpp",
               "RelativeDocumentMoniker": "Bishop.cpp",
               "ToolTip": "C:\\Users\\Cyber_User\\Documents\\Magshimim\\Ekronot\\Ex07-08-ChessProject\\Chess-Project---Tom-Yona\\yehonatanAndTomChessProject\\Bishop.cpp",
               "RelativeToolTip": "Bishop.cpp",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAUwBAAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-12-21T20:22:17.342Z"
+              "WhenOpened": "2024-12-21T20:22:17.342Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -199,14 +204,14 @@
               "RelativeDocumentMoniker": "Manager.cpp",
               "ToolTip": "C:\\Users\\Cyber_User\\Documents\\Magshimim\\Ekronot\\Ex07-08-ChessProject\\Chess-Project---Tom-Yona\\yehonatanAndTomChessProject\\Manager.cpp",
               "RelativeToolTip": "Manager.cpp",
-              "ViewState": "AgIAAFsAAAAAAAAAAAAcwGcAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAF4AAAAAAAAAAAAUwGcAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-12-21T18:06:33.96Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 18,
               "Title": "Square.cpp",
               "DocumentMoniker": "C:\\Users\\Cyber_User\\Documents\\Magshimim\\Ekronot\\Ex07-08-ChessProject\\Chess-Project---Tom-Yona\\yehonatanAndTomChessProject\\Square.cpp",
               "RelativeDocumentMoniker": "Square.cpp",
@@ -236,21 +241,23 @@
               "RelativeDocumentMoniker": "Pawn.cpp",
               "ToolTip": "C:\\Users\\Cyber_User\\Documents\\Magshimim\\Ekronot\\Ex07-08-ChessProject\\Chess-Project---Tom-Yona\\yehonatanAndTomChessProject\\Pawn.cpp",
               "RelativeToolTip": "Pawn.cpp",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABAAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAIAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-12-21T16:55:48.634Z"
+              "WhenOpened": "2024-12-21T16:55:48.634Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 13,
               "Title": "Pawn.h",
               "DocumentMoniker": "C:\\Users\\Cyber_User\\Documents\\Magshimim\\Ekronot\\Ex07-08-ChessProject\\Chess-Project---Tom-Yona\\yehonatanAndTomChessProject\\Pawn.h",
               "RelativeDocumentMoniker": "Pawn.h",
               "ToolTip": "C:\\Users\\Cyber_User\\Documents\\Magshimim\\Ekronot\\Ex07-08-ChessProject\\Chess-Project---Tom-Yona\\yehonatanAndTomChessProject\\Pawn.h",
               "RelativeToolTip": "Pawn.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-21T16:53:54.573Z"
+              "WhenOpened": "2024-12-21T16:53:54.573Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -260,14 +267,14 @@
               "RelativeDocumentMoniker": "Board.cpp",
               "ToolTip": "C:\\Users\\Cyber_User\\Documents\\Magshimim\\Ekronot\\Ex07-08-ChessProject\\Chess-Project---Tom-Yona\\yehonatanAndTomChessProject\\Board.cpp",
               "RelativeToolTip": "Board.cpp",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAAADYAAABBAAAAAAAAAA==",
+              "ViewState": "AgIAAHcAAAAAAAAAAAAAADYAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-12-21T16:27:08.498Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 20,
               "Title": "Board.h",
               "DocumentMoniker": "C:\\Users\\Cyber_User\\Documents\\Magshimim\\Ekronot\\Ex07-08-ChessProject\\Chess-Project---Tom-Yona\\yehonatanAndTomChessProject\\Board.h",
               "RelativeDocumentMoniker": "Board.h",
@@ -279,7 +286,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 19,
               "Title": "Square.h",
               "DocumentMoniker": "C:\\Users\\Cyber_User\\Documents\\Magshimim\\Ekronot\\Ex07-08-ChessProject\\Chess-Project---Tom-Yona\\yehonatanAndTomChessProject\\Square.h",
               "RelativeDocumentMoniker": "Square.h",
@@ -291,51 +298,55 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 3,
               "Title": "ChessPiece.cpp",
               "DocumentMoniker": "C:\\Users\\Cyber_User\\Documents\\Magshimim\\Ekronot\\Ex07-08-ChessProject\\Chess-Project---Tom-Yona\\yehonatanAndTomChessProject\\ChessPiece.cpp",
               "RelativeDocumentMoniker": "ChessPiece.cpp",
               "ToolTip": "C:\\Users\\Cyber_User\\Documents\\Magshimim\\Ekronot\\Ex07-08-ChessProject\\Chess-Project---Tom-Yona\\yehonatanAndTomChessProject\\ChessPiece.cpp",
               "RelativeToolTip": "ChessPiece.cpp",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-12-21T16:50:39.513Z"
+              "WhenOpened": "2024-12-21T16:50:39.513Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 16,
               "Title": "Bishop.h",
               "DocumentMoniker": "C:\\Users\\Cyber_User\\Documents\\Magshimim\\Ekronot\\Ex07-08-ChessProject\\Chess-Project---Tom-Yona\\yehonatanAndTomChessProject\\Bishop.h",
               "RelativeDocumentMoniker": "Bishop.h",
               "ToolTip": "C:\\Users\\Cyber_User\\Documents\\Magshimim\\Ekronot\\Ex07-08-ChessProject\\Chess-Project---Tom-Yona\\yehonatanAndTomChessProject\\Bishop.h",
               "RelativeToolTip": "Bishop.h",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAgAAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-21T16:08:25.336Z"
+              "WhenOpened": "2024-12-21T16:08:25.336Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 14,
               "Title": "Knight.h",
               "DocumentMoniker": "C:\\Users\\Cyber_User\\Documents\\Magshimim\\Ekronot\\Ex07-08-ChessProject\\Chess-Project---Tom-Yona\\yehonatanAndTomChessProject\\Knight.h",
               "RelativeDocumentMoniker": "Knight.h",
               "ToolTip": "C:\\Users\\Cyber_User\\Documents\\Magshimim\\Ekronot\\Ex07-08-ChessProject\\Chess-Project---Tom-Yona\\yehonatanAndTomChessProject\\Knight.h",
               "RelativeToolTip": "Knight.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA3AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-21T16:06:46.078Z"
+              "WhenOpened": "2024-12-21T16:06:46.078Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 12,
               "Title": "Queen.h",
               "DocumentMoniker": "C:\\Users\\Cyber_User\\Documents\\Magshimim\\Ekronot\\Ex07-08-ChessProject\\Chess-Project---Tom-Yona\\yehonatanAndTomChessProject\\Queen.h",
               "RelativeDocumentMoniker": "Queen.h",
               "ToolTip": "C:\\Users\\Cyber_User\\Documents\\Magshimim\\Ekronot\\Ex07-08-ChessProject\\Chess-Project---Tom-Yona\\yehonatanAndTomChessProject\\Queen.h",
               "RelativeToolTip": "Queen.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA2AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-21T16:48:03.787Z"
+              "WhenOpened": "2024-12-21T16:48:03.787Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -345,58 +356,62 @@
               "RelativeDocumentMoniker": "Main.cpp",
               "ToolTip": "C:\\Users\\Cyber_User\\Documents\\Magshimim\\Ekronot\\Ex07-08-ChessProject\\Chess-Project---Tom-Yona\\yehonatanAndTomChessProject\\Main.cpp",
               "RelativeToolTip": "Main.cpp",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAAwBgAAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABAAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-12-21T16:51:06.221Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 11,
               "Title": "Rook.h",
               "DocumentMoniker": "C:\\Users\\Cyber_User\\Documents\\Magshimim\\Ekronot\\Ex07-08-ChessProject\\Chess-Project---Tom-Yona\\yehonatanAndTomChessProject\\Rook.h",
               "RelativeDocumentMoniker": "Rook.h",
               "ToolTip": "C:\\Users\\Cyber_User\\Documents\\Magshimim\\Ekronot\\Ex07-08-ChessProject\\Chess-Project---Tom-Yona\\yehonatanAndTomChessProject\\Rook.h",
               "RelativeToolTip": "Rook.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-21T16:34:39.205Z"
+              "WhenOpened": "2024-12-21T16:34:39.205Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 15,
               "Title": "King.h",
               "DocumentMoniker": "C:\\Users\\Cyber_User\\Documents\\Magshimim\\Ekronot\\Ex07-08-ChessProject\\Chess-Project---Tom-Yona\\yehonatanAndTomChessProject\\King.h",
               "RelativeDocumentMoniker": "King.h",
               "ToolTip": "C:\\Users\\Cyber_User\\Documents\\Magshimim\\Ekronot\\Ex07-08-ChessProject\\Chess-Project---Tom-Yona\\yehonatanAndTomChessProject\\King.h",
               "RelativeToolTip": "King.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-21T16:12:46.139Z"
+              "WhenOpened": "2024-12-21T16:12:46.139Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "Rook.cpp",
               "DocumentMoniker": "C:\\Users\\Cyber_User\\Documents\\Magshimim\\Ekronot\\Ex07-08-ChessProject\\Chess-Project---Tom-Yona\\yehonatanAndTomChessProject\\Rook.cpp",
               "RelativeDocumentMoniker": "Rook.cpp",
               "ToolTip": "C:\\Users\\Cyber_User\\Documents\\Magshimim\\Ekronot\\Ex07-08-ChessProject\\Chess-Project---Tom-Yona\\yehonatanAndTomChessProject\\Rook.cpp",
               "RelativeToolTip": "Rook.cpp",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAQwA0AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAYwBIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-12-21T16:34:49.089Z"
+              "WhenOpened": "2024-12-21T16:34:49.089Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 17,
               "Title": "ChessPiece.h",
               "DocumentMoniker": "C:\\Users\\Cyber_User\\Documents\\Magshimim\\Ekronot\\Ex07-08-ChessProject\\Chess-Project---Tom-Yona\\yehonatanAndTomChessProject\\chessPiece.h",
               "RelativeDocumentMoniker": "chessPiece.h",
               "ToolTip": "C:\\Users\\Cyber_User\\Documents\\Magshimim\\Ekronot\\Ex07-08-ChessProject\\Chess-Project---Tom-Yona\\yehonatanAndTomChessProject\\chessPiece.h",
               "RelativeToolTip": "chessPiece.h",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABAAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAgwA4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-21T16:24:07.182Z"
+              "WhenOpened": "2024-12-21T16:24:07.182Z",
+              "EditorCaption": ""
             }
           ]
         },

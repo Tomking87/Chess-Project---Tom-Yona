@@ -1,5 +1,6 @@
 #include "Pawn.h"
 #include "ChessPiece.h"
+using namespace std;
 
 
 Pawn::Pawn(std::string position, char color, bool hasMoved, char type) : ChessPiece(position, color, type)
@@ -12,8 +13,9 @@ Pawn::~Pawn()
 	// already Implemented in chessPiece
 }
 
-int Pawn::move()
+string* Pawn::move()
 {
-	//Need to implement
-	return 0;
+    string* myStr = new string[1];
+    // Need to implement
+    return myStr;
 }

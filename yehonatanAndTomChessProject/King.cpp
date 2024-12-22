@@ -1,5 +1,6 @@
 #include "King.h"
 #include "ChessPiece.h"
+using namespace std;
 
 King::King(std::string position, char color, char type) : ChessPiece(position, color, type)
 {
@@ -10,8 +11,9 @@ King::~King()
     // already Implemented in chessPiece
 }
 
-int King::move()
+string* King::move()
 {
-    //Need to implement
-    return 0;
+    string* myStr = new string[1];
+    // Need to implement
+    return myStr;
 }

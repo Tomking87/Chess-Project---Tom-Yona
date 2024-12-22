@@ -6,5 +6,5 @@ class Queen : public ChessPiece
 public:
     Queen(std::string position, char color, char type);
     ~Queen();
-    int move() override;
+    std::string* move() override;
 };

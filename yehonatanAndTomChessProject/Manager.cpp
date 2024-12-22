@@ -94,11 +94,11 @@ std::string Manager::convertBoardToString(Board board)
 void Manager::printBoard(std::string boardString)
 {
 	int count = 63;
-	for(int i = 0; i < 8; i++)
+	for(int i = 7; i >= 0; i--)
 	{
 		for (int j = 0; j < 8; j++)
 		{
-			std::cout << " " << boardString[count];
+			std::cout << " " << boardString[i*8 + j];
 			count--;
 		}
 		std::cout << std::endl;

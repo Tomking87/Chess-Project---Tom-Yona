@@ -10,20 +10,24 @@ using namespace std;
 
 int main()
 {
-	string stringInput = "";
-	Board ChessBoard;
-	string chessBoardString = "";
-	Player WhitePlayer('W', false);
-	Player BlackPlayer('B', false);
-	char firstPlayer = 'W';
-	Manager GameManager('W', ChessBoard, WhitePlayer, BlackPlayer);
-	
-	chessBoardString = GameManager.convertBoardToString(ChessBoard);
-	cout << chessBoardString << endl;
-	GameManager.printBoard(chessBoardString);
+	while (true)
+	{
+		string stringInput = "";
+		Board ChessBoard;
+		string chessBoardString = "";
+		Player WhitePlayer('W', false);
+		Player BlackPlayer('B', false);
+		char firstPlayer = 'W';
+		Manager GameManager('W', ChessBoard, WhitePlayer, BlackPlayer);
 
-	cin >> stringInput;
+		chessBoardString = GameManager.convertBoardToString(ChessBoard);
+		//cout << chessBoardString << endl;
+		GameManager.printBoard(chessBoardString);
 
+		cout << "Enter Move: ";
+		cin >> stringInput;
+		cout << endl;
+	}
 
 	return 0;
 }
