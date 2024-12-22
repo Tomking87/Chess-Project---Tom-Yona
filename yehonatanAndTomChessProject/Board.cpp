@@ -104,7 +104,6 @@ Board::Board()
 
 }
 
-	
 Board::~Board()
 {
 	this->_BoardGrid.clear();
@@ -116,19 +115,4 @@ Square Board::getSquare(int Xposition, int Yposition) const // get a squere at t
 void Board::setSquareInBoard(Square mySquare, std::string position) // sets a specific Square at the board
 {
 	this->_BoardGrid[position[0]][position[1]] = mySquare;
-}
-// take the algebretic notation and convert it into x and y cords in format: int xy
-std::string Board::convertPositionToIntCords(std::string position)
-{
-	std::string cords = "";
-	char chara_h = position[0];
-	char char1_7 = position[1];
-
-	chara_h = chara_h - 'a' + '0';
-	char1_7 = char1_7 - '1' + '0';
-	// Combine the results into a string
-    cords += char1_7; // Add the row
-    cords += chara_h; // Add the col
-
-	return cords;
 }

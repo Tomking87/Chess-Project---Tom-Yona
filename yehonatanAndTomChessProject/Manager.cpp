@@ -104,3 +104,19 @@ void Manager::printBoard(std::string boardString)
 		std::cout << std::endl;
 	}
 }
+
+// take the algebretic notation and convert it into x and y cords in format: int xy
+std::string Manager::convertMoveIntoCords(std::string position)
+{
+	std::string cords = "";
+	char chara_h = position[0];
+	char char1_7 = position[1];
+
+	chara_h = chara_h - 'a' + '0';
+	char1_7 = char1_7 - '1' + '0';
+	// Combine the results into a string
+	cords += char1_7; // Add the row
+	cords += chara_h; // Add the col
+
+	return cords;
+}

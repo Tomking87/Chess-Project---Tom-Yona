@@ -13,7 +13,7 @@ Pawn::~Pawn()
 	// already Implemented in chessPiece
 }
 
-string* Pawn::move()
+std::string* Pawn::move(Board chessBoard)
 {
     string* myStr = new string[1];
     // Need to implement

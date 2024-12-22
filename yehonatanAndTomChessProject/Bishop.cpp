@@ -12,7 +12,7 @@ Bishop::~Bishop()
     // already Implemented in chessPiece
 }
 
- string* Bishop::move()
+std::string* Bishop::move(Board chessBoard)
 {
      string* myStr = new string[1];
     // Need to implement

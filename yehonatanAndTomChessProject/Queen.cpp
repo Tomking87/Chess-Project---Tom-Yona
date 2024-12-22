@@ -11,7 +11,7 @@ Queen::~Queen()
 	// already Implemented in chessPiece
 }
 
-string* Queen::move()
+std::string* Queen::move(Board chessBoard)
 {
     string* myStr = new string[1];
     // Need to implement

@@ -15,6 +15,7 @@ public:
 	Manager(char firstTurn, Board board, Player whitePlayer, Player blackPlayer);
 	~Manager();
 	std::string convertBoardToString(Board board);
+	static std::string convertMoveIntoCords(std::string position);
 	char getCurrentTurn() const;
 	void setCurrentTurn(char currentTurn);
 	void printBoard(std::string boardString);

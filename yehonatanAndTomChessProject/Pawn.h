@@ -9,6 +9,6 @@ public:
     Pawn(std::string position, char color, bool hasMoved, char type);
     ~Pawn();
     bool getMovedStatus();
-    std::string* move() override;
+    std::string* move(Board chessBoard) override;
     int eat();
 };

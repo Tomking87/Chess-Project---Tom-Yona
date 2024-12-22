@@ -12,21 +12,49 @@ int main()
 {
 	while (true)
 	{
-		string stringInput = "";
-		Board ChessBoard;
-		string chessBoardString = "";
-		Player WhitePlayer('W', false);
-		Player BlackPlayer('B', false);
-		char firstPlayer = 'W';
-		Manager GameManager('W', ChessBoard, WhitePlayer, BlackPlayer);
+		try
+		{
+			string moveInput = "";
+			string moveCords = "";
+			string destinationSquare = "";
+			string sourceSquare = "";
+			Board ChessBoard;
+			string chessBoardString = "";
+			Player WhitePlayer('W', false);
+			Player BlackPlayer('B', false);
+			char firstPlayer = 'W';
+			Manager GameManager('W', ChessBoard, WhitePlayer, BlackPlayer);
 
-		chessBoardString = GameManager.convertBoardToString(ChessBoard);
-		//cout << chessBoardString << endl;
-		GameManager.printBoard(chessBoardString);
+			chessBoardString = GameManager.convertBoardToString(ChessBoard);
+			//cout << chessBoardString << endl;
+			GameManager.printBoard(chessBoardString);
 
-		cout << "Enter Move: ";
-		cin >> stringInput;
-		cout << endl;
+			// Input move
+			cout << "Enter Move: ";
+			cin >> moveInput;
+
+			if (moveInput.length() == 4)
+			{
+				//convert move into source and destination cords
+				sourceSquare = moveInput.substr(0, 2);
+				destinationSquare = moveInput.substr(2, 2);
+				sourceSquare = Manager::convertMoveIntoCords(sourceSquare);
+				destinationSquare = Manager::convertMoveIntoCords(destinationSquare);
+			}
+			else
+			{
+				throw runtime_error("Invalid input");
+			}
+			cout << endl;
+
+			cout << sourceSquare << endl;
+			cout << destinationSquare << endl;
+		}
+		catch (const runtime_error& e)
+		{
+			std::cerr << "Error: " << e.what() << endl;
+		}
+		
 	}
 
 	return 0;

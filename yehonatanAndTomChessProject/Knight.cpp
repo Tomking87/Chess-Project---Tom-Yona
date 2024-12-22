@@ -11,7 +11,7 @@ Knight::~Knight()
     // already Implemented in chessPiece
 }
 
-string* Knight::move()
+std::string* Knight::move(Board chessBoard)
 {
     string* myStr = new string[1];
     // Need to implement
