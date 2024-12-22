@@ -10,3 +10,9 @@ Bishop::~Bishop()
 {
     // already Implemented in chessPiece
 }
+
+int Bishop::move()
+{
+    // Need to implement
+    return 0;
+}

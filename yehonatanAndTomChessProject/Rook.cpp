@@ -10,16 +10,8 @@ Rook::~Rook()
 	// already Implemented in chessPiece
 }
 
-
-//int move()
-//{
-//
-//}
-//void checkForSelfChecks()
-//{
-//
-//}
-//void checkForOpponentChecks()
-//{
-//
-//}
+int Rook::move()
+{
+	//Need to implement
+	return 0;
+}

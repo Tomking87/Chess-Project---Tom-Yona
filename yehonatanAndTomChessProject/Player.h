@@ -9,5 +9,6 @@ private:
 public:
 	Player(char color, bool isInCheck);
 	~Player();
-	int Checks(); // will check for all the checks in board
+	virtual void checkForSelfChecks();	// will check for all the checks in board
+	virtual void checkForOpponentChecks(); 
 };

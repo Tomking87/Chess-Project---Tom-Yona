@@ -6,6 +6,14 @@ using namespace std;
 
 Board::Board()
 {
+	_BoardGrid.resize(8, vector<Square>(8));
+
+	for (int row = 0; row < 8; ++row) {
+		for (int col = 0; col < 8; ++col) {
+			_BoardGrid[row][col] = Square(true, nullptr, to_string(row) + to_string(col));
+		}
+	}
+
 	Rook whiteRookL("00", 'W', 'R');
 	Rook whiteRookR("01", 'W', 'R');
 	Knight whiteKnightL("02", 'W', 'N');
@@ -65,9 +73,9 @@ Board::Board()
 
 
 	// Setting up rows 2 to 5 (empty squares
-	for(int i=2; i<6;i++)
+	for (int i = 2; i < 6;i++)
 	{
-		for(int j =0;j<rowLength;j++)
+		for (int j = 0;j < rowLength;j++)
 		{
 			this->_BoardGrid[i][j] = Square(true, nullptr, to_string(i) + to_string(j));
 		}
@@ -95,6 +103,8 @@ Board::Board()
 
 
 }
+
+	
 Board::~Board()
 {
 	this->_BoardGrid.clear();

@@ -9,3 +9,9 @@ Knight::~Knight()
 {
     // already Implemented in chessPiece
 }
+
+int Knight::move()
+{
+    //Need to implement
+    return 0;
+}

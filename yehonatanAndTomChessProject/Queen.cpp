@@ -9,3 +9,9 @@ Queen::~Queen()
 {
 	// already Implemented in chessPiece
 }
+
+int Queen::move()
+{
+	//Need to implement
+	return 0;
+}

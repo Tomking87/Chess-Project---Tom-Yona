@@ -9,6 +9,7 @@ private:
 	bool _isEmpty;
 	std::string _position;
 public:
+	Square();
 	Square(bool isEmpty, ChessPiece* piece, std::string position);
 	~Square();
 	bool getSquareStatus() const; // output is Empty

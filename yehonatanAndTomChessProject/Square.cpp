@@ -1,5 +1,13 @@
 #include "Square.h"
 
+Square::Square()
+{
+	this->_isEmpty = true;
+	this->_piece = nullptr;
+	this->_position = "";
+}
+
+
 Square::Square(bool isEmpty, ChessPiece* piece, std::string position)
 {
 	this->_isEmpty = isEmpty;

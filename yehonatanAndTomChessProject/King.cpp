@@ -9,3 +9,9 @@ King::~King()
 {
     // already Implemented in chessPiece
 }
+
+int King::move()
+{
+    //Need to implement
+    return 0;
+}

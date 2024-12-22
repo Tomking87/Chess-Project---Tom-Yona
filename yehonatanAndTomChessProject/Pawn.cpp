@@ -11,3 +11,9 @@ Pawn::~Pawn()
 {
 	// already Implemented in chessPiece
 }
+
+int Pawn::move()
+{
+	//Need to implement
+	return 0;
+}

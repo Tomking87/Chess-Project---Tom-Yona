@@ -10,6 +10,11 @@ ChessPiece::ChessPiece(std::string position, char color, char type)
     this->_type = type;
 }
 
+ChessPiece::~ChessPiece()
+{
+
+}
+
 char ChessPiece::getChessPieceColor()
 {
     return this->_color;

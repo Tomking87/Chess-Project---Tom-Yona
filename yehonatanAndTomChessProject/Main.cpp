@@ -18,8 +18,8 @@ int main()
 	Manager GameManager('W', ChessBoard, WhitePlayer, BlackPlayer);
 	
 	chessBoardString = GameManager.convertBoardToString(ChessBoard);
-	cout << chessBoardString << endl;
-	/*GameManager.printBoard(chessBoardString);*/
+	//cout << chessBoardString << endl;
+	GameManager.printBoard(chessBoardString);
 
 	return 0;
 }

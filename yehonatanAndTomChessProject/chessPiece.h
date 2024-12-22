@@ -15,8 +15,6 @@ protected:
 
 public:
 	char getChessPieceColor();
-	virtual void checkForSelfChecks();
-	virtual void checkForOpponentChecks();
 	char getChessPieceType();
 
 };
