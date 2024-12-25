@@ -1,7 +1,6 @@
 #include "King.h"
-#include "ChessPiece.h"
 #include "Board.h"
-#include "Square.h"
+
 using namespace std;
 
 King::King(std::string position, char color, char type) : ChessPiece(position, color, type)
@@ -13,7 +12,7 @@ King::~King()
     // already Implemented in chessPiece
 }
 
-std::string* King::move(Board chessBoard)
+std::vector<std::string> King::move(Board chessBoard)
 {
     int XcordMove = 0;
     int YcordMove = 0;
@@ -117,5 +116,5 @@ std::string* King::move(Board chessBoard)
         }
     }
 
-    
+    return validMoves;
 }

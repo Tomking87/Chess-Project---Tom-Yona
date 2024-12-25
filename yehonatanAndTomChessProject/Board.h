@@ -11,6 +11,14 @@
 #define rowLength 8
 #define colLength 8
 
+//class Rook;
+//class Knight;
+//class Bishop;
+//class King;
+//class Queen;
+//class Pawn;
+//class ChessPiece;
+
 class Board
 {
 private:

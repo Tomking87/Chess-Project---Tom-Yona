@@ -1,6 +1,8 @@
 #pragma once
-#include "ChessPiece.h"
+//#include "ChessPiece.h"
 #include <string>
+
+class ChessPiece;
 
 class Square
 {

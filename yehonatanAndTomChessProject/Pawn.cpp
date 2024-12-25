@@ -1,5 +1,6 @@
 #include "Pawn.h"
-#include "ChessPiece.h"
+#include "Board.h"
+
 using namespace std;
 
 
@@ -13,9 +14,9 @@ Pawn::~Pawn()
 	// already Implemented in chessPiece
 }
 
-std::string* Pawn::move(Board chessBoard)
+std::vector<std::string> Pawn::move(Board chessBoard)
 {
-    string* myStr = new string[1];
+    std::vector<std::string> validMoves;
     // Need to implement
-    return myStr;
+    return validMoves;
 }

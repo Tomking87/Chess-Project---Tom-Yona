@@ -1,6 +1,5 @@
 #include "Rook.h"
-#include "ChessPiece.h"
-#include "Square.h"
+#include "Board.h"
 
 using namespace std;
 
@@ -13,7 +12,7 @@ Rook::~Rook()
 	// already Implemented in chessPiece
 }
 
-string* Rook::move(Board chessBoard)
+std::vector<std::string> Rook::move(Board chessBoard)
 {
 	Square currSquare = chessBoard.getSquare(0, 0);
 	std::vector<std::string> validMoves; //store all valid moves
@@ -79,4 +78,6 @@ string* Rook::move(Board chessBoard)
 	{
 		validMoves.push_back(to_string(this->_Yposition) + to_string(this->_Xposition) + to_string(yPosition) + to_string(xPosition)); //adds the current square to valid moves
 	}
+
+	return validMoves;
 }
