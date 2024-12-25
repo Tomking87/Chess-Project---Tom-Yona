@@ -1,6 +1,5 @@
 #include "King.h"
 #include "Board.h"
-
 using namespace std;
 
 King::King(std::string position, char color, char type) : ChessPiece(position, color, type)
@@ -101,12 +100,16 @@ std::vector<std::string> King::move(Board chessBoard)
             }
             else
             {
-                ChessPiece& chessPieceAtSquare = *chessBoard.getSquare(XcordMove, YcordMove).getChessPieceAtSquare();
-                if (chessPieceAtSquare.getChessPieceColor() == this->_color)
+                ChessPiece* pointerChessPieceAtSquare = chessBoard.getSquare(XcordMove, YcordMove).getChessPieceAtSquare();
+                if (pointerChessPieceAtSquare == nullptr)
+                {
+                    // square is empty
+                }
+                else if (pointerChessPieceAtSquare->getChessPieceColor() == this->_color)
                 {
                     // nothing happens
                 }
-                else if ((chessPieceAtSquare.getChessPieceColor() != this->_color))
+                else if (pointerChessPieceAtSquare->getChessPieceColor() != this->_color)
                 {
                     completeMove = to_string(this->_Yposition) + to_string(_Xposition) + to_string(YcordMove) + to_string(XcordMove);
                     validMoves.push_back(completeMove);

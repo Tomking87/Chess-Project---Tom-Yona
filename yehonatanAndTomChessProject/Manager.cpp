@@ -96,6 +96,7 @@ void Manager::printBoard(std::string boardString)
 	int count = 63;
 	for(int i = 7; i >= 0; i--)
 	{
+		std::cout << i+1 << " |";
 		for (int j = 0; j < 8; j++)
 		{
 			std::cout << " " << boardString[i*8 + j];
@@ -103,6 +104,8 @@ void Manager::printBoard(std::string boardString)
 		}
 		std::cout << std::endl;
 	}
+	std::cout << "    - - - - - - - -" << std::endl;
+	std::cout << "    a b c d e f g h" << std::endl;
 }
 
 // take the algebretic notation and convert it into x and y cords in format: int xy

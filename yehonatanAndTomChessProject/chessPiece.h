@@ -15,10 +15,9 @@ protected:
 
 	ChessPiece(std::string position, char color, char type); // take the position and brake it down to the x and y positions
 	virtual ~ChessPiece();
-	virtual std::vector<std::string> move(Board chessBoard) = 0;
-
 public:
 	char getChessPieceColor();
 	char getChessPieceType();
+	virtual std::vector<std::string> move(Board chessBoard) = 0;
 
 };
