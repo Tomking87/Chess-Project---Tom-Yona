@@ -52,10 +52,10 @@ Board::Board()
 
 	string zero = "0";
 
-	//this->_BoardGrid[0][0] = Square(false, &whiteRookL, "00");//rook
+	this->_BoardGrid[0][0] = Square(false, &whiteRookL, "00");//rook
 	this->_BoardGrid[0][1] = Square(false, &whiteKnightL, "01");//knight
 	this->_BoardGrid[0][2] = Square(false, &whiteBishopL, "02");//bishop
-	//this->_BoardGrid[0][3] = Square(false, &whiteKing, "03");//King
+	this->_BoardGrid[0][3] = Square(false, &whiteKing, "03");//King
 	this->_BoardGrid[0][4] = Square(false, &whiteQueen, "04");//Queen
 	this->_BoardGrid[0][5] = Square(false, &whiteBishopR, "05");//bishop
 	this->_BoardGrid[0][6] = Square(false, &whiteKnightR, "06");//knight
@@ -81,8 +81,8 @@ Board::Board()
 		}
 	}
 
-	this->_BoardGrid[3][3] = Square(false, &whiteKing, "33");
-	this->_BoardGrid[3][0] = Square(false, &whiteRookL, "30");
+	/*this->_BoardGrid[3][3] = Square(false, &whiteKing, "33");
+	this->_BoardGrid[3][0] = Square(false, &whiteRookL, "30");*/
 	// setting up the seventh row with black pawns
 	this->_BoardGrid[6][0] = Square(false, &blackPawn1, "60");//pawn
 	this->_BoardGrid[6][1] = Square(false, &blackPawn2, "61");//pawn

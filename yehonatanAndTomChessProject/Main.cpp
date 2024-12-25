@@ -49,21 +49,6 @@ int main()
 
 			cout << sourceSquare << endl; 
 			cout << destinationSquare << endl;
-			// ChessPiece& chessPieceAtSquare1 = *ChessBoard.getSquare(0, 3).getChessPieceAtSquare();
-			// vector<string> rookMoves = chessPieceAtSquare1.move(ChessBoard); //tom queen
-			// for (int i = 0;i < 2;i++)
-			// {
-			// 	cout << rookMoves[i];
-			// }
-			ChessPiece& chessPieceAtSquare = *ChessBoard.getSquare(3, 3).getChessPieceAtSquare();
-			vector<string> kingMoves = chessPieceAtSquare.move(ChessBoard); //tom queen
-			
-			for (int i = 0;i < kingMoves.size();i++)
-			{
-				cout << kingMoves[i];
-			}
-			cout << endl;
-
 			
 		}
 		catch (const runtime_error& e)
