@@ -21,5 +21,6 @@ public:
 	~Board();
 	Square getSquare(int Yposition, int Xposition) const; // get a squere at the board
 	void setSquareInBoard(Square mySquare, std::string position); // sets a specific Square at the board
+	void updateBoard(std::string moveString);
 
 };

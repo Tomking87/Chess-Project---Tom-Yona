@@ -17,8 +17,6 @@ std::vector<std::string> Rook::move(const Board& chessBoard)
 	cout << "Entered rook move" << endl;
 	Square currSquare = chessBoard.getSquare(0, 0);
 	std::vector<std::string> validMoves; //store all valid moves
-	int i = 0;
-	int j = 0;
 	int xPosition = this->_Xposition;
 	int yPosition = this->_Yposition;
 	bool isntEmpty = false;
