@@ -11,7 +11,7 @@ Queen::~Queen()
 	// already Implemented in chessPiece
 }
 
-std::vector<std::string> Queen::move(Board chessBoard)
+std::vector<std::string> Queen::move(const Board& chessBoard)
 {
     std::vector<std::string> validMoves;
     // Need to implement

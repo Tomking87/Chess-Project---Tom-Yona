@@ -12,7 +12,7 @@ Bishop::~Bishop()
     // already Implemented in chessPiece
 }
 
-std::vector<std::string> Bishop::move(Board chessBoard)
+std::vector<std::string> Bishop::move(const Board& chessBoard)
 {
     std::vector<std::string> validMoves;
     // Need to implement

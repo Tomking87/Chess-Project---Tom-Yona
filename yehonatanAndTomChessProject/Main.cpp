@@ -40,6 +40,26 @@ int main()
 				destinationSquare = moveInput.substr(2, 2);
 				sourceSquare = Manager::convertMoveIntoCords(sourceSquare);
 				destinationSquare = Manager::convertMoveIntoCords(destinationSquare);
+
+				Square mySquare = ChessBoard.getSquare(3, 5);
+				cout << "Got square" << endl;
+				if (mySquare.getChessPieceAtSquare() == nullptr) {
+					cout << "Piece is null!" << endl;
+				}
+				else {
+					cout << "Accessing piece..." << endl;
+					ChessPiece* piece = mySquare.getChessPieceAtSquare();
+					cout << piece->getChessPieceColor() << endl;
+					cout << piece->getChessPieceType() << endl;
+					cout << "got status stuff" << endl;
+					vector<string> arrVec = piece->move(ChessBoard); // Store pointer to avoid multiple calls
+					cout << "out of move" << endl;
+					for (int i = 0;i < arrVec.size();i++)
+					{
+						cout << arrVec[i] << endl;
+					}
+					
+				}
 			}
 			else
 			{

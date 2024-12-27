@@ -1,5 +1,6 @@
 #include "King.h"
 #include "Board.h"
+#include <iostream>
 using namespace std;
 
 King::King(std::string position, char color, char type) : ChessPiece(position, color, type)
@@ -11,8 +12,11 @@ King::~King()
     // already Implemented in chessPiece
 }
 
-std::vector<std::string> King::move(Board chessBoard)
+std::vector<std::string> King::move(const Board& chessBoard)
 {
+    std::cout << "King move called" << std::endl;
+    cout << "Starting move calculation" << endl;
+    cout << "Current position: " << _Xposition << "," << _Yposition << endl;
     int XcordMove = 0;
     int YcordMove = 0;
     string destMovePosition = "";
@@ -93,14 +97,14 @@ std::vector<std::string> King::move(Board chessBoard)
         }
         else
         {
-            if (chessBoard.getSquare(XcordMove, YcordMove).getSquareStatus() == true)
+            if (chessBoard.getSquare(YcordMove, XcordMove).getSquareStatus() == true)
             {
                 completeMove = to_string(this->_Yposition) + to_string(_Xposition) + to_string(YcordMove) + to_string(XcordMove);
                 validMoves.push_back(completeMove);
             }
             else
             {
-                ChessPiece* pointerChessPieceAtSquare = chessBoard.getSquare(XcordMove, YcordMove).getChessPieceAtSquare();
+                ChessPiece* pointerChessPieceAtSquare = chessBoard.getSquare(YcordMove, XcordMove).getChessPieceAtSquare();
                 if (pointerChessPieceAtSquare == nullptr)
                 {
                     // square is empty

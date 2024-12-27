@@ -1,6 +1,7 @@
 #pragma once
 #include <string>
 #include <vector>
+#include <iostream>
 
 class Board;
 
@@ -18,6 +19,6 @@ protected:
 public:
 	char getChessPieceColor();
 	char getChessPieceType();
-	virtual std::vector<std::string> move(Board chessBoard) = 0;
+	virtual std::vector<std::string> move(const Board& chessBoard) = 0;
 
 };

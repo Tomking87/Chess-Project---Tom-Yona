@@ -12,8 +12,9 @@ Rook::~Rook()
 	// already Implemented in chessPiece
 }
 
-std::vector<std::string> Rook::move(Board chessBoard)
+std::vector<std::string> Rook::move(const Board& chessBoard)
 {
+	cout << "Entered rook move" << endl;
 	Square currSquare = chessBoard.getSquare(0, 0);
 	std::vector<std::string> validMoves; //store all valid moves
 	int i = 0;
@@ -24,59 +25,72 @@ std::vector<std::string> Rook::move(Board chessBoard)
 
 
 	//to the right
-	currSquare = chessBoard.getSquare(this->_Xposition + 1, this->_Yposition);
+	currSquare = chessBoard.getSquare(yPosition, xPosition+1);
+	xPosition++;
 	while(currSquare.getSquareStatus() == true && xPosition <= 7 && xPosition >= 0 && yPosition <= 7 && yPosition >= 0) //while the square is empty
 	{
 		validMoves.push_back(to_string(this->_Yposition) + to_string(this->_Xposition) + to_string(yPosition) + to_string(xPosition)); //adds the current square to valid moves
+		currSquare = chessBoard.getSquare(yPosition, xPosition); //set currSquare to the next position
 		xPosition++;
-		currSquare = chessBoard.getSquare(xPosition, yPosition); //set currSquare to the next position
 	}
 	ChessPiece& chessPieceAtdstSquare = *currSquare.getChessPieceAtSquare();
-	if (currSquare.getSquareStatus() == false && chessPieceAtdstSquare.getChessPieceColor() != this->_color && xPosition <= 7 && xPosition >= 0 && yPosition <= 7 && yPosition >= 0)
+	if (currSquare.getSquareStatus() == false && chessPieceAtdstSquare.getChessPieceColor() == this->_color && xPosition <= 7 && xPosition >= 0 && yPosition <= 7 && yPosition >= 0)
 	{
-		validMoves.push_back(to_string(this->_Yposition) + to_string(this->_Xposition) + to_string(yPosition) + to_string(xPosition)); //adds the current square to valid moves
+		validMoves.pop_back();
 	}
+	
+	xPosition = this->_Xposition;
+	yPosition = this->_Yposition;
 
 	//to the left
-	currSquare = chessBoard.getSquare(this->_Xposition - 1, this->_Yposition);
+	currSquare = chessBoard.getSquare(yPosition, xPosition - 1);
+	xPosition--;
 	while (currSquare.getSquareStatus() == true && xPosition <= 7 && xPosition >= 0 && yPosition <= 7 && yPosition >= 0) //while the square is empty
 	{
 		validMoves.push_back(to_string(this->_Yposition) + to_string(this->_Xposition) + to_string(yPosition) + to_string(xPosition)); //adds the current square to valid moves
+		currSquare = chessBoard.getSquare(yPosition, xPosition); //set currSquare to the next position
 		xPosition--;
-		currSquare = chessBoard.getSquare(xPosition, yPosition); //set currSquare to the next position
 	}
-	chessPieceAtdstSquare = *currSquare.getChessPieceAtSquare();
-	if (currSquare.getSquareStatus() == false && chessPieceAtdstSquare.getChessPieceColor() != this->_color && xPosition <= 7 && xPosition >= 0 && yPosition <= 7 && yPosition >= 0)
+	ChessPiece& chessPieceAtdstSquare2 = *currSquare.getChessPieceAtSquare();
+	if (currSquare.getSquareStatus() == false && chessPieceAtdstSquare2.getChessPieceColor() == this->_color && xPosition <= 7 && xPosition >= 0 && yPosition <= 7 && yPosition >= 0)
 	{
-		validMoves.push_back(to_string(this->_Yposition) + to_string(this->_Xposition) + to_string(yPosition) + to_string(xPosition)); //adds the current square to valid moves
+		validMoves.pop_back();
 	}
+
+	xPosition = this->_Xposition;
+	yPosition = this->_Yposition;
 
 	//up
-	currSquare = chessBoard.getSquare(this->_Xposition, this->_Yposition + 1);
+	currSquare = chessBoard.getSquare(yPosition + 1, xPosition);
+	yPosition++;
 	while (currSquare.getSquareStatus() == true && xPosition <= 7 && xPosition >= 0 && yPosition <= 7 && yPosition >= 0) //while the square is empty
 	{
 		validMoves.push_back(to_string(this->_Yposition) + to_string(this->_Xposition) + to_string(yPosition) + to_string(xPosition)); //adds the current square to valid moves
+		currSquare = chessBoard.getSquare(yPosition, xPosition); //set currSquare to the next position
 		yPosition++;
-		currSquare = chessBoard.getSquare(xPosition, yPosition); //set currSquare to the next position
 	}
-	chessPieceAtdstSquare = *currSquare.getChessPieceAtSquare();
-	if (currSquare.getSquareStatus() == false && chessPieceAtdstSquare.getChessPieceColor() != this->_color && xPosition <= 7 && xPosition >= 0 && yPosition <= 7 && yPosition >= 0)
+	ChessPiece& chessPieceAtdstSquare3 = *currSquare.getChessPieceAtSquare();
+	if (currSquare.getSquareStatus() == false && chessPieceAtdstSquare3.getChessPieceColor() == this->_color && xPosition <= 7 && xPosition >= 0 && yPosition <= 7 && yPosition >= 0)
 	{
-		validMoves.push_back(to_string(this->_Yposition) + to_string(this->_Xposition) + to_string(yPosition) + to_string(xPosition)); //adds the current square to valid moves
+		validMoves.pop_back();
 	}
 
+	xPosition = this->_Xposition;
+	yPosition = this->_Yposition;
+
 	//down
-	currSquare = chessBoard.getSquare(this->_Xposition, this->_Yposition - 1);
+	currSquare = chessBoard.getSquare(yPosition - 1, xPosition);
+	yPosition--;
 	while (currSquare.getSquareStatus() == true && xPosition <= 7 && xPosition >= 0 && yPosition <= 7 && yPosition >= 0) //while the square is empty
 	{
 		validMoves.push_back(to_string(this->_Yposition) + to_string(this->_Xposition) + to_string(yPosition) + to_string(xPosition)); //adds the current square to valid moves
+		currSquare = chessBoard.getSquare(yPosition, xPosition); //set currSquare to the next position
 		yPosition--;
-		currSquare = chessBoard.getSquare(xPosition, yPosition); //set currSquare to the next position
 	}
-	chessPieceAtdstSquare = *currSquare.getChessPieceAtSquare();
-	if (currSquare.getSquareStatus() == false && chessPieceAtdstSquare.getChessPieceColor() != this->_color && xPosition <= 7 && xPosition >= 0 && yPosition <= 7 && yPosition >= 0)
+	ChessPiece& chessPieceAtdstSquare4 = *currSquare.getChessPieceAtSquare();
+	if (currSquare.getSquareStatus() == false && chessPieceAtdstSquare4.getChessPieceColor() == this->_color && xPosition <= 7 && xPosition >= 0 && yPosition <= 7 && yPosition >= 0)
 	{
-		validMoves.push_back(to_string(this->_Yposition) + to_string(this->_Xposition) + to_string(yPosition) + to_string(xPosition)); //adds the current square to valid moves
+		validMoves.pop_back();
 	}
 
 	return validMoves;

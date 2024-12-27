@@ -12,7 +12,7 @@ Knight::~Knight()
     // already Implemented in chessPiece
 }
 
-std::vector<std::string> Knight::move(Board chessBoard)
+std::vector<std::string> Knight::move(const Board& chessBoard)
 {
     std::vector<std::string> validMoves;
     // Need to implement

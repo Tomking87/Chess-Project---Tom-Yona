@@ -14,7 +14,7 @@ Pawn::~Pawn()
 	// already Implemented in chessPiece
 }
 
-std::vector<std::string> Pawn::move(Board chessBoard)
+std::vector<std::string> Pawn::move(const Board& chessBoard)
 {
     std::vector<std::string> validMoves;
     // Need to implement

@@ -8,5 +8,5 @@ class Bishop : public ChessPiece
 public: 
     Bishop(std::string position, char color, char type);
     ~Bishop();
-	std::vector<std::string> move(Board chessBoard) override;
+    std::vector<std::string> move(const Board& chessBoard) override;
 };

@@ -3,8 +3,8 @@
 #include <string>
 #include <iostream>
 
-Manager::Manager(char firstTurn, Board board, Player whitePlayer, Player blackPlayer) 
-	: _currentTurn(firstTurn), _board(board), _whitePlayer(whitePlayer), _blackPlayer(blackPlayer) 
+Manager::Manager(char firstTurn, Board board, Player whitePlayer, Player blackPlayer)
+	: _currentTurn(firstTurn), _board(board), _whitePlayer(whitePlayer), _blackPlayer(blackPlayer)
 {
 
 }
@@ -21,13 +21,13 @@ std::string Manager::convertBoardToString(Board board)
 	{
 		for (int j = 0;j < 8;j++)
 		{
-			if (board.getSquare(j, i).getSquareStatus() == true)
+			if (board.getSquare(i, j).getSquareStatus() == true)
 			{
 				boardString.push_back('#');
 			}
 			else
 			{
-				ChessPiece* myChessPiece = board.getSquare(j, i).getChessPieceAtSquare();
+				ChessPiece* myChessPiece = board.getSquare(i, j).getChessPieceAtSquare();
 				ChessPiece& myChessPieceObj = *myChessPiece;
 				if (myChessPieceObj.getChessPieceColor() == 'W')
 				{
