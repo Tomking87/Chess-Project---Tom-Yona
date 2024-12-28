@@ -24,3 +24,9 @@ char ChessPiece::getChessPieceType()
 {
     return this->_type;
 }
+
+void ChessPiece::setCords(int Ypos, int Xpos)
+{
+    this->_Xposition = Xpos;
+    this->_Yposition = Ypos;
+}

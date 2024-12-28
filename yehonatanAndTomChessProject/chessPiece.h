@@ -20,5 +20,6 @@ public:
 	char getChessPieceColor();
 	char getChessPieceType();
 	virtual std::vector<std::string> move(const Board& chessBoard) = 0;
+	void setCords(int Ypos, int Xpos);
 
 };

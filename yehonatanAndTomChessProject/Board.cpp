@@ -16,10 +16,10 @@ Board::Board()
 
 	string zero = "0";
 
-	this->_BoardGrid[0][0] = Square(false, new Rook("00", 'W', 'R'), "00"); // rook
+	//this->_BoardGrid[0][0] = Square(false, new Rook("00", 'W', 'R'), "00"); // rook
 	this->_BoardGrid[0][1] = Square(false, new Knight("01", 'W', 'N'), "01"); // knight
 	this->_BoardGrid[0][2] = Square(false, new Bishop("02", 'W', 'B'), "02"); // bishop
-	this->_BoardGrid[0][3] = Square(false, new King("03", 'W', 'K'), "03"); // king
+	//this->_BoardGrid[0][3] = Square(false, new King("03", 'W', 'K'), "03"); // king
 	this->_BoardGrid[0][4] = Square(false, new Queen("04", 'W', 'Q'), "04"); // queen
 	this->_BoardGrid[0][5] = Square(false, new Bishop("05", 'W', 'B'), "05"); // bishop
 	this->_BoardGrid[0][6] = Square(false, new Knight("06", 'W', 'N'), "06"); // knight
@@ -46,8 +46,8 @@ Board::Board()
 		}
 	}
 
-	//this->_BoardGrid[3][5] = Square(false, new King("35", 'W', 'K'), "35"); // king
-	//this->_BoardGrid[3][6] = Square(false, new Rook("36", 'W', 'R'), "36"); // rook
+	this->_BoardGrid[5][3] = Square(false, new King("53", 'W', 'K'), "53"); // king
+	this->_BoardGrid[3][6] = Square(false, new Rook("36", 'W', 'R'), "36"); // rook
 
 	// setting up black pawns
 	this->_BoardGrid[6][0] = Square(false, new Pawn("60", 'B', false, 'P'), "60");//pawn
@@ -94,4 +94,5 @@ void Board::updateBoard(std::string moveString)
 	targetPosition = std::string() + moveString[2] + moveString[3];
 	this->_BoardGrid[int(moveString[0]) - 48][int(moveString[1]) - 48] = Square(true, nullptr, currPosition);
 	this->_BoardGrid[int(moveString[2]) - 48][int(moveString[3]) - 48] = Square(false, myChessPiece, targetPosition);
+	myChessPiece->setCords(int(moveString[2]) - 48, int(moveString[3]) - 48);
 }

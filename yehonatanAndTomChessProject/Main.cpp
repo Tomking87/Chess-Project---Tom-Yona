@@ -20,6 +20,8 @@ int main()
 	Player BlackPlayer('B', false);
 	char firstPlayer = 'W';
 	Manager GameManager('W', ChessBoard, WhitePlayer, BlackPlayer);
+	GameManager.setCurrentTurn('W'); // white starts every game
+	int moveCode = 0;
 	while (true)
 	{
 		try
@@ -38,12 +40,15 @@ int main()
 				destinationSquare = moveInput.substr(2, 2);
 				sourceSquare = Manager::convertMoveIntoCords(sourceSquare);
 				destinationSquare = Manager::convertMoveIntoCords(destinationSquare);
-
-				cout << "src square: " << sourceSquare << endl;
-				cout << "dst square: " << destinationSquare << endl;
 				string fullMove = sourceSquare + destinationSquare;
 				cout << "full move: " << fullMove << endl;
-				ChessBoard.updateBoard(fullMove);
+
+				moveCode = GameManager.isMoveLeagal(fullMove, ChessBoard, moveInput); // need to add the check machanic
+				cout << "move code: " << moveCode << endl;
+				if (moveCode == 0 || moveCode == 1 || moveCode == 8)
+				{
+					ChessBoard.updateBoard(fullMove);
+				}
 
 				//Square mySquare = ChessBoard.getSquare(3, 5);
 				//cout << "Got square" << endl;

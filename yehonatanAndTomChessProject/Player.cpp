@@ -1,4 +1,5 @@
 #include "Player.h"
+using namespace std;
 
 
 Player::Player(char color, bool isInCheck)
@@ -12,12 +13,14 @@ Player::~Player()
 
 }
 
-void Player::checkForSelfChecks()
+bool Player::checkForSelfChecks(std::string move, Board& chessBoard) 
 {
 	//Need to implement
+	return false;
 }
 
-void Player::checkForOpponentChecks()
+bool Player::checkForOpponentChecks(std::string move, Board& chessBoard)
 {
 	//Need to implement
+	return false;
 }

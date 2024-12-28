@@ -1,5 +1,6 @@
 #pragma once
 #include <string>
+#include "Board.h"
 
 class Player
 {
@@ -10,7 +11,6 @@ private:
 public:
 	Player(char color, bool isInCheck);
 	~Player();
-	virtual void checkForSelfChecks();	// will check for all the checks in board
-	virtual void checkForOpponentChecks(); 
-	int checkMove(std::string move);
+	virtual bool checkForSelfChecks(std::string move, Board& chessBoard);	// will check for all the checks in board after the move and set isInCheck as so
+	virtual bool checkForOpponentChecks(std::string move, Board& chessBoard);
 };
