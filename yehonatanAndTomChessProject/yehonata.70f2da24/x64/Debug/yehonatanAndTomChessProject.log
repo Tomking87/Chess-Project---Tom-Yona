@@ -1,1 +1,5 @@
-﻿  yehonatanAndTomChessProject.vcxproj -> C:\Users\Cyber_User\Documents\Magshimim\Ekronot\Ex07-08-ChessProject\Chess-Project---Tom-Yona\yehonatanAndTomChessProject\x64\Debug\yehonatanAndTomChessProject.exe
+﻿  Main.cpp
+  Manager.cpp
+  Generating Code...
+C:\Users\Cyber_User\Documents\Magshimim\Ekronot\Ex07-08-ChessProject\Chess-Project---Tom-Yona\yehonatanAndTomChessProject\Manager.cpp(220,1): warning C4715: 'Manager::isMoveLeagal': not all control paths return a value
+  yehonatanAndTomChessProject.vcxproj -> C:\Users\Cyber_User\Documents\Magshimim\Ekronot\Ex07-08-ChessProject\Chess-Project---Tom-Yona\yehonatanAndTomChessProject\x64\Debug\yehonatanAndTomChessProject.exe

@@ -54,6 +54,15 @@
     <ClInclude Include="Bishop.h">
       <Filter>Header Files\chess pieces</Filter>
     </ClInclude>
+    <ClInclude Include="FrontEndGraphicsInterafce\Pipe.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FrontEndGraphicsInterafce\stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FrontEndGraphicsInterafce\targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Manager.cpp">
@@ -90,6 +99,12 @@
       <Filter>Source Files\chess pieces</Filter>
     </ClCompile>
     <ClCompile Include="ChessPiece.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FrontEndGraphicsInterafce\Source.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FrontEndGraphicsInterafce\stdafx.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
