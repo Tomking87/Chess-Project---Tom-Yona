@@ -25,6 +25,15 @@ char ChessPiece::getChessPieceType()
     return this->_type;
 }
 
+std::string ChessPiece::getCords()
+{
+    std::string cords = "";
+    cords = std::to_string(this->_Yposition);
+    cords += std::to_string(this->_Xposition);
+
+    return cords;
+}
+
 void ChessPiece::setCords(int Ypos, int Xpos)
 {
     this->_Xposition = Xpos;

@@ -48,6 +48,8 @@ Board::Board()
 
 	this->_BoardGrid[5][3] = Square(false, new King("53", 'W', 'K'), "53"); // king
 	this->_BoardGrid[3][6] = Square(false, new Rook("36", 'W', 'R'), "36"); // rook
+	this->_BoardGrid[4][0] = Square(false, new Rook("40", 'B', 'R'), "40"); // rook
+	//this->_BoardGrid[4][0] = Square(false, new King("40", 'B', 'K'), "40"); // king
 
 	// setting up black pawns
 	this->_BoardGrid[6][0] = Square(false, new Pawn("60", 'B', false, 'P'), "60");//pawn
@@ -60,14 +62,14 @@ Board::Board()
 	this->_BoardGrid[6][7] = Square(false, new Pawn("67", 'B', false, 'P'), "67");//pawn
 
 	// setting up the eighth row
-	this->_BoardGrid[7][0] = Square(false, new Rook("00", 'B', 'R'), "70"); // rook
-	this->_BoardGrid[7][1] = Square(false, new Knight("01", 'B', 'N'), "71"); // knight
-	this->_BoardGrid[7][2] = Square(false, new Bishop("02", 'B', 'B'), "72"); // bishop
-	this->_BoardGrid[7][3] = Square(false, new King("03", 'B', 'K'), "73"); // king
-	this->_BoardGrid[7][4] = Square(false, new Queen("04", 'B', 'Q'), "74"); // queen
-	this->_BoardGrid[7][5] = Square(false, new Bishop("05", 'B', 'B'), "75"); // bishop
-	this->_BoardGrid[7][6] = Square(false, new Knight("06", 'B', 'N'), "76"); // knight
-	this->_BoardGrid[7][7] = Square(false, new Rook("07", 'B', 'R'), "77"); // rook
+	//this->_BoardGrid[7][0] = Square(false, new Rook("00", 'B', 'R'), "70"); // rook
+	this->_BoardGrid[7][1] = Square(false, new Knight("71", 'B', 'N'), "71"); // knight
+	this->_BoardGrid[7][2] = Square(false, new Bishop("72", 'B', 'B'), "72"); // bishop
+	this->_BoardGrid[7][3] = Square(false, new King("73", 'B', 'K'), "73"); // king
+	this->_BoardGrid[7][4] = Square(false, new Queen("74", 'B', 'Q'), "74"); // queen
+	this->_BoardGrid[7][5] = Square(false, new Bishop("75", 'B', 'B'), "75"); // bishop
+	this->_BoardGrid[7][6] = Square(false, new Knight("76", 'B', 'N'), "76"); // knight
+	this->_BoardGrid[7][7] = Square(false, new Rook("77", 'B', 'R'), "77"); // rook
 
 
 }
@@ -82,7 +84,7 @@ Square Board::getSquare(int Yposition, int Xposition) const // get a squere at t
 }
 void Board::setSquareInBoard(Square mySquare, std::string position) // sets a specific Square at the board
 {
-	this->_BoardGrid[position[0]][position[1]] = mySquare;
+	this->_BoardGrid[int(position[0]) - 48][int(position[1]) - 48] = mySquare;
 }
 
 void Board::updateBoard(std::string moveString)

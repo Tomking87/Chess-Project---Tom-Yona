@@ -22,10 +22,21 @@ int main()
 	Manager GameManager('W', ChessBoard, WhitePlayer, BlackPlayer);
 	GameManager.setCurrentTurn('W'); // white starts every game
 	int moveCode = 0;
+
 	while (true)
 	{
 		try
 		{
+			// display current turn
+			if (GameManager.getCurrentTurn() == 'W')
+			{
+				cout << "		    Current Player: White" << endl;
+			}
+			else if (GameManager.getCurrentTurn() == 'B')
+			{
+				cout << "		    Current Player: Black" << endl;
+			}
+
 			chessBoardString = GameManager.convertBoardToString(ChessBoard);
 			GameManager.printBoard(chessBoardString);
 
@@ -49,39 +60,28 @@ int main()
 				{
 					ChessBoard.updateBoard(fullMove);
 				}
-
-				//Square mySquare = ChessBoard.getSquare(3, 5);
-				//cout << "Got square" << endl;
-				//if (mySquare.getChessPieceAtSquare() == nullptr) {
-				//	cout << "Piece is null!" << endl;
-				//}
-				//else {
-				//	cout << "Accessing piece..." << endl;
-				//	ChessPiece* piece = mySquare.getChessPieceAtSquare();
-				//	cout << piece->getChessPieceColor() << endl;
-				//	cout << piece->getChessPieceType() << endl;
-				//	cout << "got status stuff" << endl;
-				//	vector<string> arrVec = piece->move(ChessBoard); // Store pointer to avoid multiple calls
-				//	cout << "out of move" << endl;
-				//	for (int i = 0;i < arrVec.size();i++)
-				//	{
-				//		cout << arrVec[i] << endl;
-				//	}
-				//	
-				//}
 			}
 			else
 			{
-				throw runtime_error("Invalid input");
+				throw runtime_error("Invalid input must be 4 characters long");
 			}
 			cout << endl;
-			
+
 		}
 		catch (const runtime_error& e)
 		{
-			std::cerr << "Error: " << e.what() << endl;
+			std::cerr << e.what() << endl;
 		}
-		
+
+		if (GameManager.getCurrentTurn() == 'W' && (moveCode == 0 || moveCode == 1 || moveCode == 8))
+		{
+			GameManager.setCurrentTurn('B');
+		}
+		else if (GameManager.getCurrentTurn() == 'B' && (moveCode == 0 || moveCode == 1 || moveCode == 8))
+		{
+			GameManager.setCurrentTurn('W');
+		}
+
 	}
 
 	return 0;
