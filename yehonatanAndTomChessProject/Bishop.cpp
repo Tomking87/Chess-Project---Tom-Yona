@@ -14,7 +14,6 @@ Bishop::~Bishop()
 
 std::vector<std::string> Bishop::move(const Board& chessBoard)
 {
-    cout << "Entered bishop move" << endl;
     Square currSquare = chessBoard.getSquare(0, 0);
     std::vector<std::string> validMoves;
     int xPosition = this->_Xposition;

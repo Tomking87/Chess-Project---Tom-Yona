@@ -13,7 +13,6 @@ Queen::~Queen()
 
 std::vector<std::string> Queen::move(const Board& chessBoard)
 {
-    cout << "Entered queen move" << endl;
     Square currSquare = chessBoard.getSquare(0, 0);
     std::vector<std::string> validMoves;
     int xPosition = this->_Xposition;

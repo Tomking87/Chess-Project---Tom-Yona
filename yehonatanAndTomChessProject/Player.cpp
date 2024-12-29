@@ -17,7 +17,6 @@ Player::~Player()
 
 bool Player::checkForSelfChecks(std::string move, Board& chessBoard) 
 {
-	cout << "Start of check For self Checks function" << endl;
 	vector<string> AllEnemyValidMoves;
 	string src_square = move.substr(0, 2);
 	string dst_square = move.substr(2, 2);
@@ -52,25 +51,12 @@ bool Player::checkForSelfChecks(std::string move, Board& chessBoard)
 
 				if (piece != nullptr && piece->getChessPieceColor() != this->_color)
 				{
-					cout << piece->getChessPieceColor() << endl;
-					cout << piece->getChessPieceType() << endl;
-					cout << piece->getCords() << endl;
 					std::vector<std::string> validMoves = piece->move(chessBoard);
-					for (int i = 0;i < validMoves.size();i++)
-					{
-						cout << validMoves[i] << ",";
-					}
-					cout << endl << endl;
 					AllEnemyValidMoves.insert(AllEnemyValidMoves.end(), validMoves.begin(), validMoves.end()); // add the valid moves to AllValidMoves
 				}
 			}
 		}
 	}
-	//cout << "Enemy valid moves:" << endl;
-	//for (int i = 0; i < AllEnemyValidMoves.size();i++)
-	//{
-	//	cout << AllEnemyValidMoves[i] << endl;
-	//}
 	
 	// get the this king's cords
 	for (int i = 0;i < numOfRows;i++)
@@ -107,7 +93,6 @@ bool Player::checkForSelfChecks(std::string move, Board& chessBoard)
 
 bool Player::checkForOpponentChecks(std::string move, Board& chessBoard)
 {
-	cout << "Start of check For opponent Checks function" << endl;
 	vector<string> AllValidMoves;
 	string src_square = move.substr(0, 2);
 	string dst_square = move.substr(2, 2);
@@ -148,11 +133,7 @@ bool Player::checkForOpponentChecks(std::string move, Board& chessBoard)
 			}
 		}
 	}
-	//cout << "my valid moves:" << endl;
-	//for (int i = 0; i < AllValidMoves.size();i++)
-	//{
-	//	cout << AllValidMoves[i] << endl;
-	//}
+
 	// get the enemy king's cords
 	for (int i = 0;i < numOfRows;i++)
 	{

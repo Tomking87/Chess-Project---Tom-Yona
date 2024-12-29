@@ -14,8 +14,8 @@
 
 
 // TODO: reference additional headers your program requires here
-#include "C:\Users\Cyber_User\Documents\Magshimim\Ekronot\Ex07-08-ChessProject\Chess-Project---Tom-Yona\yehonatanAndTomChessProject\Manager.h"
-#include "C:\Users\Cyber_User\Documents\Magshimim\Ekronot\Ex07-08-ChessProject\Chess-Project---Tom-Yona\yehonatanAndTomChessProject\Board.h"
-#include "C:\Users\Cyber_User\Documents\Magshimim\Ekronot\Ex07-08-ChessProject\Chess-Project---Tom-Yona\yehonatanAndTomChessProject\chessPiece.h"
-#include "C:\Users\Cyber_User\Documents\Magshimim\Ekronot\Ex07-08-ChessProject\Chess-Project---Tom-Yona\yehonatanAndTomChessProject\Player.h"
-#include "C:\Users\Cyber_User\Documents\Magshimim\Ekronot\Ex07-08-ChessProject\Chess-Project---Tom-Yona\yehonatanAndTomChessProject\Square.h"
+#include "Manager.h"
+#include "Board.h"
+#include "chessPiece.h"
+#include "Player.h"
+#include "Square.h"

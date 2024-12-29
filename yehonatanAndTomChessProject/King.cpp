@@ -14,8 +14,6 @@ King::~King()
 
 std::vector<std::string> King::move(const Board& chessBoard)
 {
-    std::cout << "King move called" << std::endl;
-    cout << "Current position: " << this->_Yposition << "," << this->_Xposition << endl;
     int XcordMove = 0;
     int YcordMove = 0;
     string destMovePosition = "";

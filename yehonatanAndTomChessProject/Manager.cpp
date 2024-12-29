@@ -136,7 +136,6 @@ void Manager::setCurrentTurn(char currentTurn)
 
 int Manager::isMoveLeagal(string move, Board& chessBoard, string rawMove)
 {
-	cout << "entered function" << endl;
 	string src_square = move.substr(0, 2);
 	string dst_square = move.substr(2, 2);
 	char src_row = move[0];
@@ -145,7 +144,7 @@ int Manager::isMoveLeagal(string move, Board& chessBoard, string rawMove)
 	char dst_col = move[3];
 
 	// check for Ileagal moves
-	if (!isalpha(rawMove[0]) || !isdigit(rawMove[1]) || !isalpha(rawMove[2]) || !isdigit(rawMove[3]) || src_col < '0' || src_col > '7' || src_row < '0' || src_row > '7' || dst_col < '0' || dst_col > '7' || dst_row < '0' || dst_row > '7')
+	if (!isalpha(rawMove[0]) || !isdigit(rawMove[1]) || !isalpha(rawMove[2]) || !isdigit(rawMove[3]) || int(src_col) -48 < 0 || int(src_col) - 48 > 7 || int(src_row) - 48 < 0 || int(src_row) - 48> 7 || int(dst_col) - 48 < 0 || int(dst_col) -48 > 7 || int(dst_row) - 48< 0 || int(dst_row) - 48> 7 || rawMove.length() != 4)
 	{
 		return 5; // indexes of squares are Ileagal
 	}
@@ -167,12 +166,9 @@ int Manager::isMoveLeagal(string move, Board& chessBoard, string rawMove)
 	else // now check if the movement is correct for the piece
 	{
 		vector<string> possibleMoves = chessBoard.getSquare(int(src_row) - 48, int(src_col) - 48).getChessPieceAtSquare()->move(chessBoard);
-		cout << chessBoard.getSquare(int(src_row) - 48, int(src_col) - 48).getChessPieceAtSquare()->getChessPieceColor() << endl;
-		cout << chessBoard.getSquare(int(src_row) - 48, int(src_col) - 48).getChessPieceAtSquare()->getChessPieceType() << endl;
 		
 		for (int i = 0;i < possibleMoves.size();i++)
 		{
-			cout << "move: " << possibleMoves[i] << endl;
 			if (move == possibleMoves[i]) // a possible move for the piece
 			{
 				if (this->_currentTurn == 'W')

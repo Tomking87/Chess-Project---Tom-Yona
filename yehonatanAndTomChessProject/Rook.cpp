@@ -14,7 +14,6 @@ Rook::~Rook()
 
 std::vector<std::string> Rook::move(const Board& chessBoard)
 {
-    cout << "Entered rook move" << endl;
     Square currSquare = chessBoard.getSquare(0, 0);
     std::vector<std::string> validMoves;
     int xPosition = this->_Xposition;
