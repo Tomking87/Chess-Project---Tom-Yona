@@ -23,6 +23,28 @@ int main()
 	GameManager.setCurrentTurn('W'); // white starts every game
 	int moveCode = 0;
 
+//	std::string ascii_art = R"(
+//  /$$$$$$  /$$                                        ,....,
+// /$$__  $$| $$                                       ,::::::<
+//| $$  \__/| $$$$$$$   /$$$$$$   /$$$$$$$  /$$$$$$$    ,::/^\"`.
+//| $$      | $$__  $$ /$$__  $$ /$$_____/ /$$_____/    ,::/,    e.
+//| $$      | $$  \ $$| $$$$$$$$|  $$$$$$ |  $$$$$$     ,::; |        '.
+//| $$    $$| $$  | $$| $$_____/ \____  $$ \____  $$    ,::|  \___,-.  c)
+//|  $$$$$$/| $$  | $$|  $$$$$$$ /$$$$$$$/ /$$$$$$$/    ;::|     \   '-'
+// \______/ |__/  |__/ \_______/|_______/ |_______/     ;::|      \
+//                                                      ;::|   _.=\
+//                                                      ;:|.= _.=\
+//   By Tom and Yehonatan.                              '|_.=   __\
+//                                                        \_..== /
+//                                                       .'.___.-'.
+//                                                      /          \
+//                                                     ('--......--')
+//                                                     /'--......--'\
+//                                                      "--......--"
+//    )";
+//
+//	std::cout << ascii_art << std::endl;
+
 	while (true)
 	{
 		try
@@ -60,6 +82,7 @@ int main()
 				{
 					ChessBoard.updateBoard(fullMove);
 				}
+				GameManager.managePawnStatus(moveCode, destinationSquare, ChessBoard); // set pawn's status accordingly
 			}
 			else
 			{

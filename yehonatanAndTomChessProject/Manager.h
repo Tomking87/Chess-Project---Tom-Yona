@@ -20,4 +20,5 @@ public:
 	void setCurrentTurn(char currentTurn);
 	void printBoard(std::string boardString);
 	int isMoveLeagal(std::string move, Board& chessBoard, std::string rawMove);
+	void managePawnStatus(int moveCode, std::string position, const Board& chessBoard);
 };

@@ -218,3 +218,19 @@ int Manager::isMoveLeagal(string move, Board& chessBoard, string rawMove)
 		return 6; // an Ileagal move of the piece
 	}
 }
+
+void Manager::managePawnStatus(int moveCode, string position, const Board& chessBoard)
+{
+	ChessPiece* myPiece = chessBoard.getSquare(int(position[0]) - 48, int(position[1]) - 48).getChessPieceAtSquare();
+	if (myPiece != nullptr)
+	{
+		if (myPiece->getChessPieceType() == 'P')
+		{
+			Pawn* myPawn = dynamic_cast<Pawn*>(myPiece); // use dynamic casting to cast the chess piece into a pawn object
+			if ((moveCode == 0 || moveCode == 1 || moveCode == 8) && myPawn->getMovedStatus() == false)
+			{
+				myPawn->setMovedStatus(true);
+			}
+		}
+	}
+}

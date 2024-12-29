@@ -16,10 +16,10 @@ Board::Board()
 
 	string zero = "0";
 
-	//this->_BoardGrid[0][0] = Square(false, new Rook("00", 'W', 'R'), "00"); // rook
+	this->_BoardGrid[0][0] = Square(false, new Rook("00", 'W', 'R'), "00"); // rook
 	this->_BoardGrid[0][1] = Square(false, new Knight("01", 'W', 'N'), "01"); // knight
 	this->_BoardGrid[0][2] = Square(false, new Bishop("02", 'W', 'B'), "02"); // bishop
-	//this->_BoardGrid[0][3] = Square(false, new King("03", 'W', 'K'), "03"); // king
+	this->_BoardGrid[0][3] = Square(false, new King("03", 'W', 'K'), "03"); // king
 	this->_BoardGrid[0][4] = Square(false, new Queen("04", 'W', 'Q'), "04"); // queen
 	this->_BoardGrid[0][5] = Square(false, new Bishop("05", 'W', 'B'), "05"); // bishop
 	this->_BoardGrid[0][6] = Square(false, new Knight("06", 'W', 'N'), "06"); // knight
@@ -46,11 +46,6 @@ Board::Board()
 		}
 	}
 
-	this->_BoardGrid[5][3] = Square(false, new King("53", 'W', 'K'), "53"); // king
-	this->_BoardGrid[3][6] = Square(false, new Rook("36", 'W', 'R'), "36"); // rook
-	this->_BoardGrid[4][0] = Square(false, new Rook("40", 'B', 'R'), "40"); // rook
-	//this->_BoardGrid[4][0] = Square(false, new King("40", 'B', 'K'), "40"); // king
-
 	// setting up black pawns
 	this->_BoardGrid[6][0] = Square(false, new Pawn("60", 'B', false, 'P'), "60");//pawn
 	this->_BoardGrid[6][1] = Square(false, new Pawn("61", 'B', false, 'P'), "61");//pawn
@@ -62,7 +57,7 @@ Board::Board()
 	this->_BoardGrid[6][7] = Square(false, new Pawn("67", 'B', false, 'P'), "67");//pawn
 
 	// setting up the eighth row
-	//this->_BoardGrid[7][0] = Square(false, new Rook("00", 'B', 'R'), "70"); // rook
+	this->_BoardGrid[7][0] = Square(false, new Rook("70", 'B', 'R'), "70"); // rook
 	this->_BoardGrid[7][1] = Square(false, new Knight("71", 'B', 'N'), "71"); // knight
 	this->_BoardGrid[7][2] = Square(false, new Bishop("72", 'B', 'B'), "72"); // bishop
 	this->_BoardGrid[7][3] = Square(false, new King("73", 'B', 'K'), "73"); // king
