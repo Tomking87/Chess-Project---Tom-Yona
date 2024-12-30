@@ -2,6 +2,7 @@
 #include <string>
 #include "Board.h"
 #include "Player.h"
+#include <vector>
 
 class Manager
 {
@@ -88,4 +89,18 @@ public:
     Output: None(Prints to the screen)
     */
     static void printASCII(int artChoice);
+
+    /*
+    Responsible for promoting pawns when they reach the finle row.
+    Input: ChessBoard(Reference to Board)
+    Output: None
+    */
+    void promotion(Board& chessBoard);
+
+    /*
+    Shuffles the back ranks of the players for the Ficher Random Mode
+    Input: None
+    Output: an array of the back rank(std::vector)
+    */
+    static std::vector<char> shuffle();
 };

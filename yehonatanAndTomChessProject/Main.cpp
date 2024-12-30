@@ -7,6 +7,7 @@
 #include "Square.h"
 #include <thread>
 #include "FrontEndGraphicsInterafce/Pipe.h"
+#include <cstring>
 
 using namespace std;
 
@@ -25,9 +26,24 @@ int main()
 	GameManager.setCurrentTurn('W'); // white starts every game
 	int moveCode = 0;
 	int InterfaceChoice = 0;
+	int GameChoice = 0;
 
 	Manager::printASCII(0);
 
+	cout << "Choose Your GameMode:" << endl;
+	cout << "Classical Chess - 0" << endl;
+	cout << "Ficher Random - 1" << endl;
+	cin >> GameChoice;
+
+	// Pick a Game
+	if (GameChoice == 1)
+	{
+		cout << "The Board's back ranks will now be Shuffled." << endl << endl;
+		std::vector<char> shuffleOrder = Manager::shuffle(); // shuffle pieces
+		Board FicherRndChessBoard(shuffleOrder); // create board
+		ChessBoard = FicherRndChessBoard; // cast board
+	}
+	
 	// Pick an Inteface
 	cout << "Choose Your Inteface:" << endl;
 	cout << "Graphics(GUI) - 0" << endl;
@@ -61,8 +77,25 @@ int main()
 		}
 
 		char msgToGraphics[1024];
-		// msgToGraphics should contain the board string accord the protocol
-		strcpy_s(msgToGraphics, "rnbkqbnrpppppppp################################PPPPPPPPRNBKQBNR0"); // just example...
+		if (GameChoice == 0)
+		{
+			// msgToGraphics should contain the board string accord the protocol
+			strcpy_s(msgToGraphics, "rnbkqbnrpppppppp################################PPPPPPPPRNBKQBNR0");
+		}
+		else if (GameChoice == 1)
+		{
+			// msgToGraphics Ficher random
+			string myBoardStr = GameManager.convertBoardToString(ChessBoard);
+			string result;
+			result.reserve(64);
+			result += myBoardStr.substr(56, 8);  // Characters 57-64
+			result += myBoardStr.substr(48, 8);  // Characters 49-56
+			result += myBoardStr.substr(16, 32); // Characters 17-48
+			result += myBoardStr.substr(8, 8);   // Characters 9-16
+			result += myBoardStr.substr(0, 8);   // Characters 1-8
+			result += "0"; // White Begins
+			strcpy_s(msgToGraphics, sizeof(msgToGraphics), result.c_str());
+		}
 
 		p.sendMessageToGraphics(msgToGraphics);   // send the board string
 
@@ -107,6 +140,8 @@ int main()
 	}
 	else if (InterfaceChoice == 1)
 	{
+		
+
 		while (true)
 		{
 			// display current turn
@@ -187,6 +222,7 @@ int main()
 			{
 				ChessBoard.updateBoard(fullMove);
 				GameManager.managePawnStatus(moveCode, destinationSquare, ChessBoard); // set pawn's status accordingly
+				GameManager.promotion(ChessBoard);
 			}
 
 			cout << endl;

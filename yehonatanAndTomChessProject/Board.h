@@ -26,6 +26,13 @@ public:
 	Board();
 
 	/*
+	Overloaded Constructor that is responsible for creating The Ficher Random Board
+	input: none
+	output: none
+	*/
+	Board(std::vector<char> shuffle);
+
+	/*
 	Destructor that cleans up the chess board and its components
 	input: none
 	output: none

@@ -2,6 +2,8 @@
 #include "ChessPiece.h"
 #include <string>
 #include <iostream>
+#include <algorithm>
+#include <random> // For std::random_device and std::mt19937
 using namespace std;
 
 Manager::Manager(char firstTurn, Board board, Player whitePlayer, Player blackPlayer)
@@ -285,5 +287,139 @@ void Manager::printASCII(int artChoice)
 	else if (artChoice == 1)
 	{
 		cout << CheckMateMsg << endl << endl;
+	}
+}
+
+void Manager::promotion(Board& chessBoard)
+{
+	char chessPiece = ' ';
+	Square currSquare = chessBoard.getSquare(0, 0);
+	for (int i = 0; i < 8; i++)
+	{
+		currSquare = chessBoard.getSquare(7, i);
+		if (currSquare.getChessPieceAtSquare() != nullptr)
+		{
+			if (currSquare.getChessPieceAtSquare()->getChessPieceType() == 'P')
+			{
+				std::string position = currSquare.getChessPieceAtSquare()->getCords();
+				std::cout << "promotion!" << std::endl;
+				std::cout << "select the chessPiece you would like:" << std::endl;
+				std::cout << "R - Rook" << std::endl;
+				std::cout << "N - Knight" << std::endl;
+				std::cout << "Q - Queen" << std::endl;
+				std::cout << "B - Bishop" << std::endl;
+				std::cout << "position: " << position << std::endl;
+				std::cin >> chessPiece;
+				if (chessPiece == 'R')
+				{
+					currSquare = Square(false, new Rook(position, 'W', 'R'), position);
+					chessBoard.setSquareInBoard(currSquare, position);
+				}
+				if (chessPiece == 'N')
+				{
+					currSquare = Square(false, new Knight(position, 'W', 'N'), position);
+					chessBoard.setSquareInBoard(currSquare, position);
+				}
+				if (chessPiece == 'Q')
+				{
+					currSquare = Square(false, new Queen(position, 'W', 'Q'), position);
+					chessBoard.setSquareInBoard(currSquare, position);
+				}
+				if (chessPiece == 'B')
+				{
+					currSquare = Square(false, new Bishop(position, 'W', 'B'), position);
+					chessBoard.setSquareInBoard(currSquare, position);
+				}
+			}
+		}
+	}
+
+
+	for (int i = 0; i < 8; i++)
+	{
+		currSquare = chessBoard.getSquare(0, i);
+		if (currSquare.getChessPieceAtSquare() != nullptr)
+		{
+			if (currSquare.getChessPieceAtSquare()->getChessPieceType() == 'P')
+			{
+				std::string position = currSquare.getChessPieceAtSquare()->getCords();
+				std::cout << "promotion!" << std::endl;
+				std::cout << "select the chessPiece you would like:" << std::endl;
+				std::cout << "r - Rook" << std::endl;
+				std::cout << "n - Knight" << std::endl;
+				std::cout << "q - Queen" << std::endl;
+				std::cout << "b - Bishop" << std::endl;
+				std::cout << "position: " << position << std::endl;
+				std::cin >> chessPiece;
+				if (chessPiece == 'r')
+				{
+					currSquare = Square(false, new Rook(position, 'B', 'R'), position);
+					chessBoard.setSquareInBoard(currSquare, position);
+				}
+				if (chessPiece == 'n')
+				{
+					currSquare = Square(false, new Knight(position, 'B', 'N'), position);
+					chessBoard.setSquareInBoard(currSquare, position);
+				}
+				if (chessPiece == 'q')
+				{
+					currSquare = Square(false, new Queen(position, 'B', 'Q'), position);
+					chessBoard.setSquareInBoard(currSquare, position);
+				}
+				if (chessPiece == 'b')
+				{
+					currSquare = Square(false, new Bishop(position, 'B', 'B'), position);
+					chessBoard.setSquareInBoard(currSquare, position);
+				}
+			}
+		}
+	}
+}
+
+std::vector<char> Manager::shuffle()
+{
+	int counter = 0;
+	bool foundFirstBishop = false;
+
+	// create an array for the back rank
+	std::vector<char> backRank = { 'R', 'N', 'B', 'K', 'Q', 'B', 'N', 'R' };
+
+	while (true)
+	{
+		counter = 0;
+		foundFirstBishop = false;
+
+		// Create a random number generator
+		std::random_device rd; // Seed
+		std::mt19937 g(rd());  // Mersenne Twister random number generator
+
+		// Shuffle the array
+		std::shuffle(backRank.begin(), backRank.end(), g);
+
+		// check for the Bishops placments
+		for (int i = 0;i < backRank.size();i++)
+		{
+			if (backRank[i] == 'B' && foundFirstBishop == false) // Found the first bishop
+			{
+				counter++;
+				foundFirstBishop = true;
+			}
+			else if (backRank[i] == 'B' && foundFirstBishop == true)
+			{
+				counter++;
+				if (counter % 2 == 0)
+				{
+					return backRank;
+				}
+				else
+				{
+					break; // reshuffle
+				}
+			}
+			else if (foundFirstBishop == true)
+			{
+				counter++;
+			}
+		}
 	}
 }
