@@ -81,4 +81,11 @@ public:
     output: none
     */
     void managePawnStatus(int moveCode, std::string position, const Board& chessBoard);
+
+    /*
+    Prints ASCII art onto the Console.
+    Input: Art Choice(int)
+    Output: None(Prints to the screen)
+    */
+    static void printASCII(int artChoice);
 };

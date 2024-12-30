@@ -26,28 +26,7 @@ int main()
 	int moveCode = 0;
 	int InterfaceChoice = 0;
 
-
-	std::string ascii_art = R"(
-  /$$$$$$  /$$                                        ,....,
- /$$__  $$| $$                                       ,::::::<
-| $$  \__/| $$$$$$$   /$$$$$$   /$$$$$$$  /$$$$$$$    ,::/^\"`.
-| $$      | $$__  $$ /$$__  $$ /$$_____/ /$$_____/    ,::/,    e.
-| $$      | $$  \ $$| $$$$$$$$|  $$$$$$ |  $$$$$$     ,::; |        '.
-| $$    $$| $$  | $$| $$_____/ \____  $$ \____  $$    ,::|  \___,-.  c)
-|  $$$$$$/| $$  | $$|  $$$$$$$ /$$$$$$$/ /$$$$$$$/    ;::|     \   '-'
- \______/ |__/  |__/ \_______/|_______/ |_______/     ;::|      \
-                                                      ;::|   _.=\
-                                                      ;:|.= _.=\
-   By Tom and Yehonatan.                              '|_.=   __\
-                                                        \_..== /
-                                                       .'.___.-'.
-                                                      /          \
-                                                     ('--......--')
-                                                     /'--......--'\
-                                                      "--......--"
-    )";
-
-	std::cout << ascii_art << std::endl;
+	Manager::printASCII(0);
 
 	// Pick an Inteface
 	cout << "Choose Your Inteface:" << endl;
@@ -191,6 +170,17 @@ int main()
 			else if (moveCode == 8)
 			{
 				cout << "Valid Move - CheckMate!" << endl;
+				Manager::printASCII(1);
+				if (GameManager.getCurrentTurn() == 'W')
+				{
+					cout << "  White Wins." << endl;
+				}
+				else if (GameManager.getCurrentTurn() == 'B')
+				{
+					cout << "  Black Wins." << endl;
+				}
+
+				return 0;
 			}
 
 			if (moveCode == 0 || moveCode == 1 || moveCode == 8)

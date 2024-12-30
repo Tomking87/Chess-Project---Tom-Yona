@@ -182,7 +182,14 @@ int Manager::isMoveLeagal(string move, Board& chessBoard, string rawMove)
 					{
 						if (this->_whitePlayer.checkForOpponentChecks(move, chessBoard) == true) // caused a check to the opponent
 						{
-							return 1; // Valid a check will occur on opponent
+							if (this->_whitePlayer.checkForMate(move, chessBoard) == true) // check if the check was actully a mate
+							{
+								return 8; // Valid - CheckMate
+							}
+							else if (this->_whitePlayer.checkForMate(move, chessBoard) == false)
+							{
+								return 1; // Valid a check will occur on opponent
+							}
 						}
 						else if (this->_whitePlayer.checkForOpponentChecks(move, chessBoard) == false)
 						{
@@ -201,7 +208,14 @@ int Manager::isMoveLeagal(string move, Board& chessBoard, string rawMove)
 					{
 						if (this->_blackPlayer.checkForOpponentChecks(move, chessBoard) == true) // caused a check to the opponent
 						{
-							return 1; // Valid a check will occur on opponent
+							if (this->_blackPlayer.checkForMate(move, chessBoard) == true) // check if the check was actully a mate
+							{
+								return 8; // Valid - CheckMate
+							}
+							else if (this->_blackPlayer.checkForMate(move, chessBoard) == false)
+							{
+								return 1; // Valid a check will occur on opponent
+							}
 						}
 						else if (this->_blackPlayer.checkForOpponentChecks(move, chessBoard) == false)
 						{
@@ -228,5 +242,48 @@ void Manager::managePawnStatus(int moveCode, string position, const Board& chess
 				myPawn->setMovedStatus(true);
 			}
 		}
+	}
+}
+
+void Manager::printASCII(int artChoice)
+{
+	std::string openingMsg = R"(
+  /$$$$$$  /$$                                        ,....,
+ /$$__  $$| $$                                       ,::::::<
+| $$  \__/| $$$$$$$   /$$$$$$   /$$$$$$$  /$$$$$$$    ,::/^\"`.
+| $$      | $$__  $$ /$$__  $$ /$$_____/ /$$_____/    ,::/,    e.
+| $$      | $$  \ $$| $$$$$$$$|  $$$$$$ |  $$$$$$     ,::; |        '.
+| $$    $$| $$  | $$| $$_____/ \____  $$ \____  $$    ,::|  \___,-.  c)
+|  $$$$$$/| $$  | $$|  $$$$$$$ /$$$$$$$/ /$$$$$$$/    ;::|     \   '-'
+ \______/ |__/  |__/ \_______/|_______/ |_______/     ;::|      \
+                                                      ;::|   _.=\
+                                                      ;:|.= _.=\
+   By Tom and Yehonatan.                              '|_.=   __\
+                                                        \_..== /
+                                                       .'.___.-'.
+                                                      /          \
+                                                     ('--......--')
+                                                     /'--......--'\
+                                                      "--......--"
+    )";
+
+	string CheckMateMsg = R"(
+  /$$$$$$  /$$                           /$$       /$$      /$$             /$$                  
+ /$$__  $$| $$                          | $$      | $$$    /$$$            | $$                  
+| $$  \__/| $$$$$$$   /$$$$$$   /$$$$$$$| $$   /$$| $$$$  /$$$$  /$$$$$$  /$$$$$$    /$$$$$$     
+| $$      | $$__  $$ /$$__  $$ /$$_____/| $$  /$$/| $$ $$/$$ $$ |____  $$|_  $$_/   /$$__  $$    
+| $$      | $$  \ $$| $$$$$$$$| $$      | $$$$$$/ | $$  $$$| $$  /$$$$$$$  | $$    | $$$$$$$$    
+| $$    $$| $$  | $$| $$_____/| $$      | $$_  $$ | $$\  $ | $$ /$$__  $$  | $$ /$$| $$_____/    
+|  $$$$$$/| $$  | $$|  $$$$$$$|  $$$$$$$| $$ \  $$| $$ \/  | $$|  $$$$$$$  |  $$$$/|  $$$$$$$ /$$
+ \______/ |__/  |__/ \_______/ \_______/|__/  \__/|__/     |__/ \_______/   \___/   \_______/|__/)";
+
+	
+	if (artChoice == 0)
+	{
+		cout << openingMsg << endl;
+	}
+	else if (artChoice == 1)
+	{
+		cout << CheckMateMsg << endl << endl;
 	}
 }

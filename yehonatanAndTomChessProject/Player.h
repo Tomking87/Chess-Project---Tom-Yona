@@ -39,4 +39,6 @@ public:
     output: bool - true if the opponent's king is in check, false otherwise
     */
     virtual bool checkForOpponentChecks(std::string move, Board& chessBoard);
+
+    virtual bool checkForMate(std::string move, Board& chessBoard);
 };

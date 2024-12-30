@@ -1,4 +1,5 @@
 #include "Player.h"
+#include <iostream>
 using namespace std;
 #define numOfRows 8
 #define numOfCols 8
@@ -166,4 +167,71 @@ bool Player::checkForOpponentChecks(std::string move, Board& chessBoard)
 	}
 
 	return retValue;
+}
+
+bool Player::checkForMate(std::string move, Board& chessBoard)
+{
+	//Ausmes a check has accured - Managed by the isMoveLeagal func
+	vector<string> AllEnemyValidMoves;
+	string src_square = move.substr(0, 2);
+	string dst_square = move.substr(2, 2);
+	char src_row = move[0];
+	char src_col = move[1];
+	char dst_row = move[2];
+	char dst_col = move[3];
+	Square mySquare;
+	bool isSquareEmpty = true;
+
+	// update board 
+	if (chessBoard.getSquare(int(dst_row) - 48, int(dst_col) - 48).getChessPieceAtSquare() != nullptr) // dst square is not empty
+	{
+		mySquare = chessBoard.getSquare(int(dst_row) - 48, int(dst_col) - 48); // save the square
+		isSquareEmpty = false;
+	}
+	chessBoard.updateBoard(move);
+
+	// get all enemy valid moves
+	for (int i = 0; i < numOfRows; i++)
+	{
+		for (int j = 0; j < numOfCols; j++)
+		{
+			const Square& square = chessBoard.getSquare(i, j);
+
+			if (square.getSquareStatus() == false) // Check if the square is empty
+			{
+				ChessPiece* piece = square.getChessPieceAtSquare();
+
+				if (piece != nullptr && piece->getChessPieceColor() != this->_color)
+				{
+					std::vector<std::string> validMoves = piece->move(chessBoard);
+					AllEnemyValidMoves.insert(AllEnemyValidMoves.end(), validMoves.begin(), validMoves.end()); // add the valid moves to AllValidMoves
+				}
+			}
+		}
+	}
+
+
+	for (int i = 0;i < AllEnemyValidMoves.size();i++)
+	{
+		if (this->checkForOpponentChecks(AllEnemyValidMoves[i], chessBoard) == false)
+		{
+			// return board to original
+			chessBoard.updateBoard(dst_square + src_square);
+			if (isSquareEmpty == false)
+			{
+				chessBoard.setSquareInBoard(mySquare, dst_square);
+			}
+
+			return false; // a move has released the check - No Mate
+		}
+	}
+
+	// return board to original
+	chessBoard.updateBoard(dst_square + src_square);
+	if (isSquareEmpty == false)
+	{
+		chessBoard.setSquareInBoard(mySquare, dst_square);
+	}
+
+	return true; // no move has released the check - CheckMate
 }
